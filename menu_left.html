@@ -1,0 +1,195 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CamPass - Cameroon Customs Integrated System</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery/ui.dynatree.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery/jquery.treeview.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="menu_kr.json"></script>
+    <script type="text/javascript" src="menu_en.json"></script>
+    <script type="text/javascript" src="menu_ek.json"></script>
+    <script type="text/javascript" src="js/common/framework/jquery/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+        var menuJsonData = null;
+    
+        $(document).ready(function() {
+    
+            // toggleLeftMenu();
+            //var thisfilefullname = document.URL.substring(document.URL.lastIndexOf('/') + 1, document.URL.length);
+            //var thisfilename = thisfilefullname.substring(thisfilefullname.lastIndexOf('.'), 0);
+            //var thisParentId = thisfilename.substring(thisfilename.lastIndexOf(')') + 1, thisfilename.length).replace('_', '');
+            
+            //var language_type = (thisfilename.includes('(FR)') ? "fr" : "kr");
+
+            temp = location.href.split("?");
+            data=temp[1].split("/");
+            
+            var thisParentId = data[0];
+            var language_type = data[1];
+
+            readJsonData(language_type);
+            createMenuLevelThreeFour(menuJsonData, thisParentId);
+        });
+    
+
+        <!-- language type 별로 해당 매뉴 데이터 로딩 -->
+        function readJsonData(language_type) {
+            menuJsonData = $.parseJSON(eval('data_'+language_type));
+        }
+
+        <!-- 3레벨인지 4레벨인지 확인 -->
+        function isFolder(obj) {
+            return obj.file == null;
+        }
+    
+        <!-- 3, 4레벨 매뉴 초기화 -->
+        function initMenu() {
+            $("#menu_three_four_group").empty();
+        }
+    
+//        <!-- 3, 4레벨 매뉴 display -->
+//        function createMenuLevelThreeFour(menuJsonData, parentId) {
+//            for(var i=0;i < menuJsonData.length; i++){
+//    
+//                if (menuJsonData[i].parentId == decodeURI(parentId)){
+//    
+//                    if (isFolder(menuJsonData[i])) { // menu three
+//                        $("#menu_three_four_group").append("<h1><a href=\"\">"+menuJsonData[i].name+"</a></h1><ul id=\"menu_three_"+menuJsonData[i].id+"\"> </ul>");
+//                        createMenuLevelThreeFour(menuJsonData, menuJsonData[i].id);
+//                    } else { // menu four
+//                        $("#menu_three_"+parentId).append("<li><a class='leftMenu' id='"+menuJsonData[i].id+"' onclick=\"link('"+menuJsonData[i].id+"','"+menuJsonData[i].file+"')\">"+menuJsonData[i].name+"</a></li>");
+//                    }
+//                }
+//            }
+//        }
+        
+        
+        
+        function createMenuLevelThreeFour(menuJsonData, parentId) {
+		
+		
+            for (var i = 0; i < menuJsonData.length; i++) {
+
+                if (menuJsonData[i].parentId == decodeURI(parentId)) {
+
+					//if(menuJsonData[i].id=='O00000000005_2' && parentId == 'O00000000004_1' ){
+					//	console.log(menuJsonData[i], parentId);
+					//}
+
+                    if (isFolder(menuJsonData[i])) { // menu three
+                        $("#menu_three_four_group").append(
+                            "<h1><a href=\"\">" + menuJsonData[i].name + "</a></h1>" +
+                            "<ul id=\"menu_three_" + menuJsonData[i].id + "\"> </ul>"
+                        );
+                        createMenuLevelThreeFour(menuJsonData, menuJsonData[i].id);
+
+                    } else { // menu four
+                        // 🔧 부모 UL이 없으면 만들어줌
+                        if ($("#menu_three_" + parentId).length === 0) {
+                            $("#menu_three_four_group").append(
+								//"<h1><a href=\"\">" + menuJsonData[i].name + "</a></h1>"
+								"<h1><a href=\"javascript:void(0);\" onclick=\"link('" + menuJsonData[i].id + "','" + menuJsonData[i].file + "')\">" + menuJsonData[i].name + "</a></h1>"
+                            );
+                        }
+						else {
+							$("#menu_three_" + parentId).append(
+								"<li><a class='leftMenu' id='" + menuJsonData[i].id +
+								"' onclick=\"link('" + menuJsonData[i].id + "','" + menuJsonData[i].file + "')\">" +
+								menuJsonData[i].name + "</a></li>"
+							);
+						}
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    
+        <!-- HTML 화면 로딩 -->
+        function link(screenid, html) {
+
+            
+          $(".leftMenu").css("color","#666").css("font-weight", "");
+          $("#"+screenid).css("color","red").css("font-weight", "bold");
+
+            parent.mainFrame.location.href = html;
+        }
+    
+        function toggleLeftMenu() {
+            //parentDoc = parent.document.all;
+            frameMain = parent.document.getElementById('frameMain');
+            $(".closeBtn").click(function(){
+                  $('.closeBtn').addClass('Lnodisplay');
+                  $('.openBtn').removeClass('Lnodisplay');
+                  $("#menu_three_four_group").addClass('Lnodisplay');
+                frameMain.cols = "20,*";
+            });
+            $(".openBtn").click(function(){
+                $('.openBtn').addClass('Lnodisplay');
+                $('.closeBtn').removeClass('Lnodisplay');
+                $("#menu_three_four_group").removeClass('Lnodisplay');
+                frameMain.cols = "200,*";
+            });
+        }
+    </script>
+    </head>
+    <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="">
+    <div id="wrap">
+        <div id="main">
+            <div id="left">
+                <!-- menu level 3, 4 -->
+                <div id="menu_three_four_group" style="overflow : auto;"></div>
+                <!--
+                <div id="menu_three_four_group" style="overflow : auto;"><h1><a href="">Gestion du magasin hors taxe</a></h1><ul id="menu_three_L3_면세점관리_화물_내부"> <li><a onclick="link('html/UI-I-CAR-0141(FR).html')">Coter le rapport de vente à l'inspecteur</a></li><li><a onclick="link('html/UI-I-CAR-0142(FR).html')">Contrôler la déclaration d'introduction</a></li><li><a onclick="link('html/UI-I-CAR-0143(FR).html')">Coter la déclaration de déplacement à l'inspecteur</a></li><li><a onclick="link('html/UI-I-CAR-0144(FR).html')">Contrôler la déclaration de déplacement</a></li><li><a onclick="link('html/UI-I-CAR-0145(FR).html')">Coter le rapport de vente à l'inspecteur</a></li><li><a onclick="link('html/UI-I-CAR-0146(FR).html')">Contrôler le rapport de vente</a></li><li><a onclick="link('html/UI-I-CAR-0147(FR).html')">Coter le rapport hors vente à l'inspecteur</a></li><li><a onclick="link('html/UI-I-CAR-0148(FR).html')">Contrôler le rapport hors vente</a></li><li><a onclick="link('html/UI-I-CAR-0149(FR).html')">Stock</a></li></ul></div>
+                -->
+                <!-- menu level 3, 4 -->
+            </div>
+        </div>
+    </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        /*
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }*/
+        // ]]>
+    </script>
+    
+    </body></html>

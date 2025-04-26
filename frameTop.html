@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>CamPass - Cameroon Customs Integrated System</title>
+<link rel="stylesheet" type="text/css" href="css/default.css"/>
+<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery/ui.dynatree.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery/jquery.treeview.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="menu_kr.json"></script>
+<script type="text/javascript" src="menu_en.json"></script>
+<script type="text/javascript" src="menu_ek.json"></script>
+<script type="text/javascript" src="js/common/framework/jquery/jquery-1.6.1.min.js"></script>
+
+<script type="text/javascript">
+
+    var menuJsonData = null;
+    var global_language_type = null;
+    var global_parentId = null;
+
+    <!-- 화면로딩 -->
+    $(document).ready(function() {
+
+        var language_type = "en";
+        global_language_type = "en";
+        readJsonData(language_type);
+    });
+
+    <!-- language type 별로 해당 매뉴 데이터 로딩 -->
+    function readJsonData(language_type) {
+        
+
+        $("#fontkr")[0].color ='white';
+        $("#fonten")[0].color ='white';
+        $("#fontek")[0].color ='white';
+
+        $("#font"+language_type)[0].color ='#2C3E50';
+        
+        menuJsonData = $.parseJSON(eval('data_'+language_type));
+        global_language_type = language_type;
+        createMenuLevelOne();
+    }
+
+    <!-- 1레벨 매뉴 display -->
+    function createMenuLevelOne() {
+
+        $("#menu_one_group").empty();
+        try {
+            parent.leftFrame.location.href = "blank.html";
+            parent.mainFrame.location.href = "blank.html";
+        }catch(err) {
+            // skip
+        }
+
+        for(var i=0;i < menuJsonData.length; i++){
+
+            if(menuJsonData[i].parentId == ""){
+                $("#menu_one_group").append("<li><a class='eptIpt' id='"+menuJsonData[i].id+"' onclick=\"createMenuLevelTwo('"+menuJsonData[i].id+"');\">"+menuJsonData[i].name+"</a></li>");
+            }
+
+            if(i == 0) createMenuLevelTwo(menuJsonData[i].id);
+        }
+    }
+
+    <!-- 2레벨 매뉴 display -->
+    function createMenuLevelTwo(parentId) {
+
+        $("#menu_two_group").empty();
+        try {
+            parent.leftFrame.location.href = "blank.html";
+            parent.mainFrame.location.href = "blank.html";
+        }catch(err) {
+            // skip
+        }
+
+        //CDK E I 선택에 따라 배경색 및 로고 변경
+        $(".eptIpt").css("color","white");
+        $("#"+parentId).css("color","#2C3E50");
+        
+        
+        if(parentId.indexOf('E') != -1) {
+            $("#head").css({
+                "position":"relative" ,
+                "color":"#9ca7b9" ,
+                "background":"url(./images/common/top_bg.jpg) repeat" , 
+                "width":"100%" , 
+                "height":"105px"
+            });
+            $("#logo").css({
+                "width": "173px",
+                "height": "60px",
+                "padding-left": "20px",
+                "background": "url(./images/idras_logo_ept.png) 50% 50% no-repeat",
+                "background-size": "173px 52px"
+            });
+        }
+        else if(parentId.indexOf('I') != -1) {
+            $("#head").css({
+                "position":"relative" ,
+                "color":"#9ca7b9" ,
+                "background":"url(./images/common/top_bg.jpg) repeat" , 
+                "width":"100%" , 
+                "height":"105px"
+            });
+            $("#logo").css({
+                "width": "173px",
+                "height": "60px",
+                "padding-left": "20px",
+                "background": "url(./images/idras_logo_ipt.png) 50% 50% no-repeat",
+                "background-size": "173px 52px"
+            });
+        }
+        else { // if(parentId.indexOf('O') != -1) {
+            $("#head").css({
+                "position":"relative" ,
+                "color":"#9ca7b9" ,
+                "background":"url(./images/common/top_bg.jpg) repeat" ,
+                "width":"100%" ,
+                "height":"105px"
+            });
+            $("#logo").css({
+                "width": "173px",
+                "height": "60px",
+                "padding-left": "20px",
+                "background": "url(./images/idras_logo_ipt.png) 50% 50% no-repeat",
+                "background-size": "173px 52px"
+            });
+        }
+        
+        for(var i=0;i < menuJsonData.length; i++){
+            if (i == 0 ) {firstMenu = menuJsonData[i].id;}
+            
+            if (menuJsonData[i].parentId == parentId){
+                $("#menu_two_group").append("<li class='slideitem'><a class='topMenu' id='"+menuJsonData[i].id+"' onclick=\"changeLeftMenu('"+menuJsonData[i].id+"');\">"+menuJsonData[i].name+"</a></li>");
+            }
+        }
+        
+        var firstMenu = menuJsonData.find(function(item) {
+            return item.parentId == parentId;
+        });
+        if (firstMenu) {
+            changeLeftMenu(firstMenu.id);
+        }
+        
+    }
+
+    <!-- 3, 4 레벨 매뉴 변경 호출(leftFrame) -->
+    function changeLeftMenu(parentId) {
+        // parent.leftFrame.initMenu();
+        global_parentId = parentId;
+
+        $(".topMenu").css("color","#9facbd");
+        $("#"+parentId).css("color","#3A7CA5").css("font-weight", "bold");
+
+        //parent.leftFrame.location.href = "menu_" + (parentId.includes('E') ? "e" : "i") + "(" + global_language_type.toUpperCase() + ")_" + parentId + ".html";
+        parent.leftFrame.location.href = "menu_left.html?"+parentId+"/"+global_language_type;
+        parent.mainFrame.location.href = "blank.html";
+        // parent.leftFrame.createMenuLevelThreeFour(menuJsonData, parentId);
+        //selMenuInfo.setId(parentId);
+        //selMenuInfo.setParentId(global_language_type.toUpperCase());
+        //console.log("menu_" + (parentId.includes('E') ? "e" : "i") + "(" + global_language_type + ").html?"+parentId+"/"+global_language_type.toUpperCase());
+
+    }
+    
+    
+    <!-- CDK LEVEL 2 메뉴 슬라이드 적용 -->
+    function prev1() {
+        if($("#slideck").is(':checked')) {
+            $("#slideck").prop("checked", false);
+            $("#menu_two_group .slideitem").css({"left":"", "right":""});
+        } else {
+            //$("#slideck").prop("checked", true);
+        }
+    }
+    
+    function next1() {
+        if($("#slideck").is(':checked')) {
+            //$("#slideck").prop("checked", false);
+        } else {
+            $("#slideck").prop("checked", true);
+            $("#menu_two_group .slideitem").css({"right":"100%"});
+        }
+    }
+    
+    function leftMenuOnOff() {
+        if($("#leftmenuctrck").is(':checked')) {
+            $("#leftmenuctrck").prop("checked", false);
+            window.parent.postMessage({ message : 'leftMenuOff' }, '*' );
+            $("#level0 a ").html("▷")
+        } else {
+            $("#leftmenuctrck").prop("checked", true);
+            window.parent.postMessage({ message : 'leftMenuOn' }, '*' );
+            $("#level0 a ").html("◁")
+        }
+    }
+</script>
+</head>
+<body>
+    
+
+<div id="wrap">
+    <div id="head">
+        <div id="logo">
+            <a href="#"></a>
+        </div>
+        <div id="level0">
+            <input id="leftmenuctrck" Type="checkbox" checked style="display: none;"/>
+            <a onclick="leftMenuOnOff();" >◁</a>
+        </div>
+        <div id="level1">
+            <div class="up">
+                <ul>
+                    <li>
+                        <a onclick="readJsonData('ek');"><font id="fontek" color="white">English+korean</font></a>
+                    </li>
+                    <li>
+                        <a onclick="readJsonData('kr');"><font id="fontkr" color="white">korean</font></a>
+                    </li>
+                    <li>
+                        <a onclick="readJsonData('en');"><font id="fonten" color="white">English</font></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="down">
+                <!-- menu level 1 -->
+                <ul id="menu_one_group">
+                </ul>
+                <!-- menu level 1 -->
+            </div>
+        </div>
+        <div id="level2">
+            <input id="slideck" Type="checkbox" style="display: none;"/>
+            <div class="prev1">
+                <img src="images/common/left_btn1.jpg" onclick="javascript:prev1();" style="cursor:pointer;" />
+            </div>
+            <div class="menu slidebox">
+                <!-- menu level 2 -->
+                <ul id="menu_two_group" class="slidelist">
+                    <!-- <li><a href="">Ex/Import Declaration Process</a></li> -->
+                </ul>
+                <!-- menu level 2 -->
+            </div>
+            <div class="next1">
+                <img src="images/common/right_btn1.jpg" onclick="javascript:next1();" style="cursor:pointer;" />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

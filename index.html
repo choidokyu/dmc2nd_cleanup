@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DMC(Debt Management and Compliance Monitoring)</title>
+
+
+<script type="text/javascript">
+window.addEventListener( 'message', (e) => {
+    //console.log( e.data.message );
+    if( e.data.message === 'leftMenuOn' ){
+        frameMain.cols='210px,*';
+    }
+    if( e.data.message === 'leftMenuOff' ){
+        frameMain.cols='0px,*';
+    }
+});
+</script>
+</head>
+<frameset rows="105,*" cols="*" frameborder="no" border="0" framespacing="0">
+  <frame src="frameTop.html" name="topFrame" scrolling="No" noresize="noresize" id="frameTop" title="topFrame" />
+  <frameset id="frameMain" title="frameMain" name="frameMain" cols="210,*" frameborder="no" border="0" framespacing="0">
+    <frame src="frameLeft.html" name="leftFrame" id="frameLeft" title="leftFrame" style="overflow-x : auto;overflow-y: auto;"/>
+    <frame src="" name="mainFrame" id="mainFrame" title="mainFrame" />
+  </frameset>
+</frameset>
+<noframes><body>
+</body></noframes>
+</html>

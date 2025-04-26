@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+body {margin:0px;}
+SELECT  {background-color : #ffffff;}
+body, table, tr, td, select, textarea, input, div, p {font-family: dotum, arial, helvetica, sans-serif;font-size: 9pt;align : justify;color: #666666;line-height:16px;}
+div{margin:0; padding:0; }
+img{margin:0; padding:0; border-style:none;}
+p {text-align:justify;}
+
+/* 링크 스타일 */
+.list_01           {float:left; font-size:12px; line-height:19px; color:#818182; text-decoration:none; }
+.list_01 a:link    {float:left; font-size:12px; line-height:19px; color:#818182;text-decoration:none; }
+.list_01 a:visited {float:left; font-size:12px; line-height:19px; color:#818182; text-decoration:none;}
+.list_01 a:active  {float:left; font-size:12px; line-height:19px; color:#818182; text-decoration:none; }
+.list_01 a:hover   {float:left; font-size:12px; line-height:19px; color:#ff6600; text-decoration:none;}
+.list_02           {font-size:12px; line-height:18px;  color:#999999;letter-spacing:-1; text-decoration:none; }
+.list_02 a:link    {font-size:12px; line-height:18px; color:#999999;letter-spacing:-1;text-decoration:none; }
+.list_02 a:visited {font-size:12px; line-height:18px; color:#999999;letter-spacing:-1; text-decoration:none;}
+.list_02 a:active  {font-size:12px; line-height:19px; color:#999999;letter-spacing:-1; text-decoration:none;}
+.list_02 a:hover   {font-size:12px; line-height:18px; color:#0286d6;letter-spacing:-1; text-decoration:none;}
+.bottom01           {font-size:11px; letter-spacing:-1;  color:#e4e4e4; text-decoration:none; }
+.bottom01 a:link    {font-size:11px; letter-spacing:-1;  color:#e4e4e4; text-decoration:none; }
+.bottom01 a:visited {font-size:11px; letter-spacing:-1;  color:#e4e4e4; text-decoration:none; }
+.bottom01 a:active  {font-size:11px; letter-spacing:-1;  color:#e4e4e4; text-decoration:none; }
+.bottom01 a:hover   {font-size:11px; letter-spacing:-1;  color:#e4e4e4; text-decoration:none; }
+.login_t           {font-size:11px; letter-spacing:-1;  color:#749e5c;  text-decoration:none; }
+.login_t  a:link    {font-size:11px; letter-spacing:-1;  color:#749e5c;  text-decoration:none; }
+.login_t  a:visited {font-size:11px; letter-spacing:-1;  color:#749e5c;  text-decoration:none; }
+.login_t  a:active  {font-size:11px; letter-spacing:-1;  color:#749e5c;  text-decoration:none; }
+.login_t  a:hover   {font-size:11px; letter-spacing:-1;  color:#e4e4e4;  text-decoration:none; }
+.navi            {font-size:11px; letter-spacing:-1;  color:#999999; text-decoration:none; }
+.navi  a:link    {font-size:11px; letter-spacing:-1;  color:#999999; text-decoration:none; }
+.navi  a:visited {font-size:11px; letter-spacing:-1;  color:#999999; text-decoration:none; }
+.navi  a:active  {font-size:11px; letter-spacing:-1;  color:#999999; text-decoration:none; }
+.navi  a:hover   {font-size:11px; letter-spacing:-1;  color:#666666; text-decoration:none; }
+.navi02          {font-size:11px; letter-spacing:-1;  color:#666666; text-decoration:none;  }
+.navi02  a:link    {font-size:11px; letter-spacing:-1;  color:#666666; text-decoration:none; }
+.navi02  a:visited {font-size:11px; letter-spacing:-1;  color:#666666; text-decoration:none; }
+.navi02  a:active  {font-size:11px; letter-spacing:-1;  color:#666666; text-decoration:none; }
+.navi02  a:hover   {font-size:11px; letter-spacing:-1;  color:#006699; text-decoration:none; }
+.navi03         {font-size:12px; letter-spacing:-1;  color:#999999; text-decoration:none; }
+.login_id       {font-size:11px; letter-spacing:-1;  color:#697ab2; text-decoration:underline;  }
+
+/* 폰트*/
+.title{ font-size:12px; color:#333333;  font-family:arial; text-align:center}
+.title01{ font-size:11px; color:#6699cc;  font-family:arial; text-align:center}
+.title02{ font-size:11px; color:#666666;  font-family:arial; text-align:center}
+.bottom02 { font-size:11px; color:#5d5d5d; float:left; font-family:arial; text-align:center}
+
+/* 정렬 */
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+
+/* 메뉴 */
+.menu             {width:135px; height:31px; background:url(/images/portal/menu_but.gif)  ; text-decoration:none; letter-spacing:-1;   font-family:arial; text-align:center;  font-size:12px; color:#545454;font-weight:bold; line-height:31px;}
+.menu  a:link     {text-decoration:none;  font-family:arial; text-align:center;  font-size:12px; color:#545454;font-weight:bold; line-height:31px; letter-spacing:-1; }
+.menu  a:visited  { text-decoration:none;  font-family:arial; text-align:center;  font-size:12px; color:#545454;font-weight:bold; line-height:31px; letter-spacing:-1; }
+.menu  a:active   {text-decoration:none;  font-family:arial; text-align:center;  font-size:12px; color:#545454;font-weight:bold; line-height:31px; letter-spacing:-1; }
+.menu  a:hover    { text-decoration:none;  font-family:arial; text-align:center;  font-size:12px; color:#006699;font-weight:bold; line-height:31px; letter-spacing:-1; }

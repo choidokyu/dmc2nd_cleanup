@@ -1,0 +1,206 @@
+@CHARSET "UTF-8";
+
+/********** DEFAULT SETTING **********/
+html:first-child select {padding-right:6px; height:20px;} /* Opera 9 & Below Fix */
+option {padding-right:6px;} /* Firefox Fix */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, table, th, td, input, select, textarea, button {margin:0; padding:0;}
+img, fieldset, button {border:0 none;}
+img {vertical-align:middle;}
+dl, ul, ol, menu, li {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
+input, select, button {line-height:1.2; /* 입력폼에서 춤추지 않는 최소 줄간 1.2 */ vertical-align:middle;}
+button {border:0 none; background-color:transparent; cursor:pointer;}
+body, table, th, td, input, textarea, button {font:11px Tahoma, sans-serif; color:#666;}
+body {background-color:#FFF; height:100%; overflow-x:hidden;}
+table {border-collapse:collapse; border-spacing:0;}
+a {color:#666; text-decoration:none;}
+a:active, a:hover, a:focus {text-decoration:none;}
+a:hover {color:#164e7e;}
+address, caption, cite, code, dfn, em, var {font-style:normal; font-weight:normal;}
+label {margin-right: 4px;vertical-align: middle;}
+legend {overflow:hidden; visibility:hidden; font-size:0; line-height:0;} /* For Screen Reader */
+caption {display:none;}
+em, address {font-style:normal;}
+hr {display:none !important; visibility:hidden;}
+select{width:auto;border:1px solid #cccccc;height:21px;padding-left:2px;padding-top:0px;font-family:tahoma;color:#333333;font-size:11px;}
+::-moz-focus-inner {padding:0; margin:0; border:0;}
+
+/********** TITLE **********/
+.main_title{margin:8px 0;padding-left:18px;background:url("images/common/main_title.gif") no-repeat left center;font-weight:bold; font-size:12px;height: 19px;}
+.sub_title{margin:8px 0;padding-left:12px;border:0px;background:url("images/common/sub_title.gif") no-repeat left center;font-weight:bold;height:14px;}
+
+/********** SEARCH AREA, DETAIL AREA **********/
+.default_table {margin:10px 0;width:100%;border-color:#eaeaea;border-top: 1px solid #eaeaea;border-left: 1px solid #eaeaea;}
+.default_table caption{font-weight:bold;font-size:12px;padding-bottom:4px;color:#000000;text-align:left;font-family:tahoma;}
+.default_table th {height:23px;color:#000000;background-color:#f8f7e0;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;text-align:left;padding:5px 10px 5px 10px;word-wrap:break-word;line-height:1.5;}
+.default_table td {font-weight:normal;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;text-align:left;padding:5px 15px 5px 10px;line-height:1.5;}
+.default_table a {color: #6699cc;}
+
+.division_left_area {width: 49.5%;float: left;padding-right: 5px;}
+.division_right_area {width: 49.5%;float: left;padding-left: 5px;}
+.clear_area {clear: both;}
+.division_left_area .col_label, .division_right_area .col_label {width: 32%;}
+
+/********** LIST AREA **********/
+.list_table {width:100%;margin:10px 0;padding:8px 0 7px 0;border-color:#eaeaea;border-top:1px solid #cacaca;border-left:1px solid #cacaca;}
+.list_table tr {background:url("images/common/table_title_bg.gif") no-repeat left center;}
+.list_table caption {font-weight: bold;font-size: 12px;padding-bottom:4px;color:#000000;text-align:left;}
+.list_table th {font-weight:bold;color:#000000;padding:13px 10px 10px 10px;background-color:#f8f7e0;border-right:1px solid #cacaca;border-bottom:1px solid #cacaca;text-align: center;}
+.list_table td {padding:8px 4px 7px 4px;height:auto;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;text-align:center;}
+.list_table tr:hover{background:#f3f3f3;}
+.list_table a {color: #6699cc;}
+
+.list_table2 {width:100%;margin:10px 0;padding:8px 0 7px 0;border-color:#eaeaea;border-top:1px solid #cacaca;border-left:1px solid #cacaca;}
+.list_table2 tr {no-repeat center center;}
+.list_table2 caption {font-weight: bold;font-size: 12px;padding-bottom:4px;color:#000000;text-align:left;}
+.list_table2 th {font-weight:bold;color:#000000;padding:13px 10px 10px 10px;background-color:#f8f7e0;border-right:1px solid #cacaca;border-bottom:1px solid #cacaca;text-align: center;}
+.list_table2 td {padding:8px 4px 7px 4px;height:auto;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;text-align:center;}
+.list_table2 tr:hover{background:#f3f3f3;}
+.list_table2 a {color: #6699cc;}
+
+.list_scorll_area {border-left:1px solid #eee;border-right:1px solid #eee;border-bottom:1px solid #eee;}
+.list_scorll_header {width:100%;padding:8px 0 7px 0;border-color:#eaeaea;border-top:1px solid #cacaca;border-left:1px solid #cacaca;}
+.list_scorll_header tr {background:url("images/common/table_title_bg.gif") no-repeat left center;}
+.list_scorll_header th {font-weight:bold;color:#000000;padding:13px 10px 10px 10px;background-color:#f8f7e0;border-right:1px solid #cacaca;border-bottom:1px solid #cacaca;text-align: center;}
+
+.list_scroll_area {height: 300px;overflow: auto;border-bottom:1px solid #eee;}
+
+.list_scorll_body {width:100%;padding:8px 0 7px 0;border-color:#eaeaea;border-left:1px solid #cacaca;}
+.list_scorll_body tr {background:url("images/common/table_title_bg.gif") no-repeat left center;}
+.list_scorll_body td {padding:8px 4px 7px 4px;height:auto;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;text-align:center;}
+.list_scorll_body tr:hover{background:#f3f3f3;}
+.list_scorll_body a {color: #6699cc;}
+
+/********** COLGROUP **********/
+/* 2단 */
+.col_label {width: 16%;}
+.col_desc {width: 34%;}
+
+/* 3단 */
+.col3_label {width: 15%;}
+.col3_desc {width: 18%;}
+
+/********** PAGING AREA **********/
+.paging_area {clear:both;width:100%;}
+.paging_area .paging_left{float:left;text-align:left;width:20%;}
+.paging_area .paging_center{float:left;text-align:center;*width:58%;width:60%;}
+.paging_area .paging_right{float:left;text-align:right;;width:20%;}
+.paging_area .paging_left .page_count{margin-left:2px;margin-right:2px;color:#ff6600;font-weight:bold;}
+.paging_area .paging_right .page_count{margin-left:2px;margin-right:2px;color:#ff6600;font-weight:bold;}
+
+.paging_bottom {height:30px;text-align:center;font-size:12px;font-weight:bold;}
+.paging_bottom .current_page{color:red;}
+
+/********** BUTTON AREA **********/
+.button_area 	  {position:relative; width:100%;height:30px;margin:7px 0;}
+.icon_button_area {position:relative; width:100%;height:20px;margin:7px 0;}
+.button_area .button_left_area{position:absolute;color:#659e1f;margin-top:0px;}
+.button_area .button_right_area{width:100%;text-align:right;}
+.button_area .button_left_area input{margin-right:3px;margin-bottom:3px;position:relative;z-index:11;}
+.button_area .button_right_area input{margin-left:3px;margin-bottom:3px;position:relative;z-index:10;}
+
+/********** LEGEND AREA **********/
+.legend_area {clear:both;width:100%;}
+.legend_area .legend_left_area{position:absolute;color:#659e1f;margin-top:0px;}
+.legend_area .legend_right_area{width:100%;text-align:right;margin-bottom:0px;}
+
+/********** TAB **********/
+.container{width:auto;margin-top:10px;}
+.container ul.tab{padding:0;height:auto;}
+.container ul.tab li{list-style-type:none;width:auto;height:40px;float:left;border-width:1px;border-style:solid;border-color:#bcbcbc;margin-right:-1px;margin-bottom:-1px;}
+.container ul.tab li a{outline:none;background:#f3f3f3;display:block;color:#505050;font-weight:bold;line-height:40px;text-align:center;font-size:0.9em;padding:0 10px 0 10px;border-bottom:1px solid #bcbcbc;}
+.container ul.tab li a.selected{border-bottom:1px solid #ffffff;background:#ffffff;text-decoration:none;color:#333;cursor:default;background:url("images/common/tab_arrowdown.gif") no-repeat center;}
+.container ul.panel{clear:both;border:1px solid #bcbcbc;border-top:block;padding:0;}
+.container ul.panel li{list-style-type:none;padding:0px;color:#333;}
+
+/********** TAB **********/
+.container2{width:auto;margin-top:10px;}
+.container2 ul.tab{padding:0;height:auto;}
+.container2 ul.tab li{list-style-type:none;width:auto;height:40px;float:left;border-width:1px;border-style:solid;border-color:#bcbcbc;margin-right:-1px;margin-bottom:-1px;}
+.container2 ul.tab li a{outline:none;background:#f3f3f3;display:block;color:#505050;font-weight:bold;line-height:40px;text-align:center;font-size:0.9em;padding:0 10px 0 10px;border-bottom:1px solid #bcbcbc;}
+.container2 ul.tab li a.selected{border-bottom:1px solid #ffffff;background:#ffffff;text-decoration:none;color:#333;cursor:default;background:url("images/common/tab_arrowdown.gif") no-repeat center;}
+.container2 ul.panel{clear:both;border:1px solid #bcbcbc;border-top:block;padding:0;}
+.container2 ul.panel li{list-style-type:none;padding:0px;color:#333;}
+
+
+.pad10{padding-left:10px;}
+.r_pad10{padding-right:10px;}
+
+/********** BUTTON **********/
+/* 기본 BUTTON (예: 조회버튼, 등록버튼, 리스트버튼 등) */
+.default_button {font-size:12px;padding:6px 10px;color:#555;border:1px solid;border-color:#cfcfcf #cccccc #c8c8c8;background:#f5f5f5;cursor:pointer;}
+.default_button:hover, .default_button:focus {background:#efefef;border-color:#c3c3c3;}
+
+/* 달력 BUTTON (예: 1D, 1W 1M 등) */
+.date_button {font-size:11px; padding:2px 2px;color:#555;border:1px solid;border-color:#cfcfcf #cccccc #c8c8c8;background:#f5f5f5;cursor:pointer;}
+.date_button:hover, .date_button:focus {background:#efefef;border-color:#c3c3c3;}
+
+/* 아이콘 BUTTON (예: Add, Del 등) */
+.icon_button {font-size:11px; padding:2px 4px;color:#555;border:1px solid;border-color:#cfcfcf #cccccc #c8c8c8;background:#f5f5f5;cursor:pointer;}
+.icon_button_disabled {font-size:11px; padding:2px 4px;color:#555;border:1px solid;border-color:#cfcfcf #cccccc #c8c8c8;background:#f5f5f5;color:#ccc;cursor: default;}
+.icon_button:hover, .icon_button:focus {background:#efefef;border-color:#c3c3c3;}
+
+/* 계산기 BUTTON (예: 1, 2, *, / 등) */
+.cal_button {font-size:11px; padding:2px 2px;color:#555;border:1px solid;border-color:#cfcfcf #cccccc #c8c8c8;background:#f5f5f5;cursor:pointer;width:25px}
+
+/* 팝업 조회 ICON */
+.search_button {background: url("images/common/search_btn.gif") no-repeat center center;border: 0 none;width: 20px;height: 19px;cursor: pointer;}
+
+/* 상세조회 팝업 Icon */
+.detail_popup { background: url("images/common/detail_popup.png") center center; width: 16px; height: 16px; border: 0 none; vertical-align: middle;cursor: pointer;}
+
+/* 비활성화 버튼 */
+.button_readonly {font-size:12px;padding:6px 10px;color:#555;border:1px solid;border-color:#cfcfcf #cccccc #c8c8c8;background:#f5f5f5;color:#ccc;cursor: default;}
+.button_disabled {font-size:12px;padding:6px 10px;color:#555;border:1px solid;border-color:#cfcfcf #cccccc #c8c8c8;background:#f5f5f5;color:#ccc;cursor: default;}
+
+/* image button cursor */
+.btnimg {cursor: pointer;}
+
+/********** FORM **********/
+input[type=text]::-ms-clear {display: none;}
+.text_input {padding:1px 4px;border:1px solid #cccccc;height:17px;font-family:tahoma;color:#33333;}
+.checkbox_input {margin-right: 4px; }
+.radio_input {margin-right: 4px; }
+textarea {padding:1px 0 0 4px;border: 1px solid #eaeaea;font-family:tahoma;color:#33333;vertical-align: middle;}
+
+/* 비활성화 입력 */
+.readonly, .input_readonly {padding:1px 4px;border:1px solid #cccccc;font-family:tahoma;color:#33333;background: #eee;}
+.disabled, .input_disabled {padding:1px 4px;border:1px solid #cccccc;font-family:tahoma;color:#33333;background: #eee;}
+
+.tlab_validate_required {padding-right:15px; background:url(images/common/required.gif) 0 -24px no-repeat;background-position: right;}
+
+/********** ALIGN **********/
+table .center{text-align:center;}
+table .left{text-align:left;}
+table .right{text-align:right;}
+
+/********** SPACE **********/
+.height_space {height: 10px;clear: both;}
+
+/********** COLOR ***********/
+.red {color:red;}
+.orange {color:orange;}
+.gray {color:#C8B560;}
+.green {color:green;}
+.blue {color:blue;}
+.yellow {color:yellow;}
+
+.bg_red {background-color:red;}
+.bg_orange {background-color:orange;}
+.bg_gray {background-color:#C8B560;}
+.bg_green {background-color:green;}
+.bg_blue {background-color:blue;}
+.bg_yellow {background-color:yellow;}
+
+/********** VALIDATION ***********/
+label.error {color: red; margin-left: 8px;}
+
+/********** INPUT FORMAT ***************/
+input[type=text].uppercase {text-transform:uppercase;}
+
+/********** BLOCKING CIRCLE WRAPPER ***********/
+.wrapper {position:absolute;top:50%;left:50%;}
+
+/********** add css (2016.10.14) ***********/
+.Lnodisplay { display:none; }

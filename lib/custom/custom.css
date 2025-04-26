@@ -1,0 +1,263 @@
+ h1 { color: #E05E00; font-size: 14px; font-weight: 700; line-height: 0px; margin: 5 0                  }                                                                          
+ h2 { color: #E05E00; font-size: 13.5px; font-weight: 700; line-height: 0px; margin: 0 0; cursor:default; }                                                                          
+ h3 { color: #618AD4; font-size: 12.5px; font-weight: 700; line-height: 0px; margin: 0 0; cursor:default; }                                                                                      
+ h5 { color: #E05E00; font-size: 11px; font-weight: 700; line-height: 0px; }                                                                                      
+ h6 { color: #E05E00; font-size: 10px; font-weight: 700; line-height: 0px; }       
+                                                                                
+ .nav-tabs {                                                                                                                    
+    padding-left: 15px;                                                                                                         
+    margin-bottom: 0;   
+    border: none;                                                                                                               
+ }                                                                                                                              
+
+ .nav-tabs li {                                                                                                                    
+    font-weight:400                                                                                                           
+ }                                                                                                                              
+
+ .tab-content {                                                                                                                 
+    border: 1px solid #ddd;                                                                                                     
+    border-radius: 4px;                                                                                                         
+    padding: 15px;                                                                                                              
+ }                                                                                                                              
+ .mandatory {                                                                                                                    
+ 		color 				: #FF0000;	
+ }                                                                                                                              
+
+a{
+	color 				: #E05E00;	
+	text-decoration		: none;
+}
+
+a:hover{
+	text-decoration		: underline;
+}
+
+body { 
+	position:relative;font-size:12px;font-family: Malgun Gothic, sans-serif !important;color:#363636; }
+
+/* 부트스트랩 오버라이딩 */
+label {
+	font-weight:400;
+	height: 30px;
+	padding: 5px 10px;
+	background: #f5f5f5;
+}
+
+.input-file + label {
+	font-weight:400;
+	height: 30px;
+	padding: 0px 0px;
+	background: #f5f5f5;
+}
+
+.label-no-background, .label-line {
+	background: #ffffff;
+}
+
+.label-for-select  {
+	background: #ffffff;
+	padding: 4px 15px 5px 1px;
+}
+
+.label-for-subitem  {
+	background: #ffffff;
+	padding: 4px 1px 5px 1px;
+}
+
+.label-for-select-start  {
+	background: #ffffff;
+	padding: 4px 1px 5px 1px;
+}
+
+.label-line {
+	padding: 1px 1px;
+}
+
+.pagination { 
+	margin: 0px 0; 
+}
+
+.form-one-line > .col-sm-2 {
+	width: 16.1667%
+}
+
+.tab-pane > .row > .col-sm-12 > .form-one-line > .col-sm-2 {
+	width: 16.3667%
+}
+
+.table { 
+	margin-bottom: 5px; 
+}
+
+.table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
+	padding: 4px;
+	text-align: center;
+}
+
+.table > tbody > tr > th, .table > thead > tr > th {
+	background: #f5f5f5;
+	font-weight:400;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.btn-sm {
+	height: 30px;
+}
+
+/*
+.form-group-sm .form-control {
+    height: 25px;
+}
+
+.btn-sm {
+    padding: 2.5px 10px;
+}
+
+.input-group-addon {
+    font-size: 12px;
+    padding: 2.5px 12px;
+}
+*/
+
+.row {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.panel-default > .panel-heading {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    color: #333;
+}
+
+.panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 5px 5px;
+}
+
+.button-group {
+  background-color: #f5f5f5;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+
+  .form-group > .col-sm-1, .form-group > .col-sm-2 , .form-group > .col-sm-3 , .form-group > .col-sm-4
+, .form-group > .col-sm-5, .form-group > .col-sm-6 , .form-group > .col-sm-7 , .form-group > .col-sm-8
+, .form-group > .col-sm-9, .form-group > .col-sm-10, .form-group > .col-sm-11, .form-group > .col-sm-12 {
+	padding-left: 5px;
+  padding-right: 5px;
+}
+
+  td> .form-group > .col-sm-1, td> .form-group > .col-sm-2 , td> .form-group > .col-sm-3 , td> .form-group > .col-sm-4
+, td> .form-group > .col-sm-5, td> .form-group > .col-sm-6 , td> .form-group > .col-sm-7 , td> .form-group > .col-sm-8
+, td> .form-group > .col-sm-9, td> .form-group > .col-sm-10, td> .form-group > .col-sm-11, td> .form-group > .col-sm-12 {
+	padding-left: 0px;
+  padding-right: 0px;
+}
+
+.text-group {
+	padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sub-group-title .sub-group-content {
+	margin-top: 0px;
+	margin-bottom: 100px;
+}
+
+.panel-body {
+    padding-top: 3px;                                                                                                         
+    padding-bottom: 5px;                                                                                                         
+}
+
+.panel-default > .panel-heading {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #333;
+    padding-left: 15px;                                                                                                         
+}
+
+/*
+.panel-default > .panel-heading {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    color: #333;
+}
+*/
+
+hr {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.btn {
+    font-size: 12px;
+}
+
+.btn-left {
+    float: left;
+    margin-right: 3px;
+}
+
+.headerExt {
+		border-top: 1px solid #f9f5f6;
+    position: fixed;
+    min-width: auto;
+    padding: 10px 20px 0px 20px;
+    box-shadow: 0 1px 0 rgba(12,13,14,0.15),0 0 0 transparent,0 0 0 transparent,0 0 0 transparent;
+
+    top: 0px;
+    width: 100%;
+    z-index: 1050;
+    background-color: #2f215b;
+    transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
+    box-sizing: border-box;
+}
+
+.headerInt {
+		border-top: 1px solid #E05E00;
+    position: fixed;
+    min-width: auto;
+    padding: 10px 20px 0px 20px;
+    box-shadow: 0 1px 0 rgba(12,13,14,0.15),0 0 0 transparent,0 0 0 transparent,0 0 0 transparent;
+
+    top: 0px;
+    width: 100%;
+    z-index: 1050;
+    background-color: #eeeeee;
+    transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
+    box-sizing: border-box;
+}
+
+.headerEcg {
+		border-top: 1px solid #f9f5f6;
+    position: fixed;
+    min-width: auto;
+    padding: 10px 20px 0px 20px;
+    box-shadow: 0 1px 0 rgba(12,13,14,0.15),0 0 0 transparent,0 0 0 transparent,0 0 0 transparent;
+
+    top: 0px;
+    width: 100%;
+    z-index: 1050;
+    background-color: #0f4f11;
+    transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
+    box-sizing: border-box;
+}
+
+
+h1 {
+	margin-top: 3px;
+	margin-bottom: 3px;
+
+}
+
+.fixedTitle + .fixedTitleBlock {
+    margin-top: 60px;
+}
+

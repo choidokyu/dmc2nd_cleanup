@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-I-DMC-0003_List Of Cases(사례 목록)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> List Of Cases(사례 목록) - UI-I-DMC-0003</h1>
+<div class='pull-right'><a href='UI-I-DMC-0003(EN).html'>EN</a> | <a href='UI-I-DMC-0003(KR).html'>KR</a> | <a href='UI-I-DMC-0003(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-I-DMC-0003_TABLE_68' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Taxpayer ID<br>(Taxpayer ID)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Taxpayer_ID<br>_Taxpayer_ID__1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' ></th>
+        <td width='35%' style='text-align: left;' class=''>
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >From Date<br>(From Date)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group  form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___From_Date<br>_From_Date__div_1'>                         
+                  <input type='text' class='form-control '  id='___From_Date<br>_From_Date_' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___From_Date<br>_From_Date__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >To Date<br>(To Date)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group  form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___To_Date<br>_To_Date__div_1'>                         
+                  <input type='text' class='form-control '  id='___To_Date<br>_To_Date_' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___To_Date<br>_To_Date__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Error Type<br>(Error Type)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-group-sm '>
+      <select class='form-control ' id='___Error_Type<br>_Error_Type_' >
+            <option >Error Type</option>
+            <option >Payments Without Debit Number(직불 번호 없이 납부)
+</option>
+            <option >Incorrect Posting(잘못된 납부)
+</option>
+            <option >Duplicate Assessments(중복 납부)
+</option>
+            <option >Vacated Assessments(취소된 납부)
+</option>
+            <option >Wrong Assessments(잘못된 납부)
+</option>
+            <option >Lumpsum Payments(일시불 납부)</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-0003_TABLE_68').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-0003_TABLE_74' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='LINK%' >
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Case ID<br>(사례 ID)</th>
+      <th class='text-center'>Taxpayer ID<br>(납세자 ID)</th>
+      <th class='text-center'>Taxpayer Name<br>(납세자 이름)</th>
+      <th class='text-center'>Tax Region<br>(과세 지역)</th>
+      <th class='text-center'>Stage<br>(단계)</th>
+      <th class='text-center'>Status<br>(상태)</th>
+      <th class='text-center'>Error Type<br>(오류 유형)</th>
+      <th class='text-center'>Date Created<br>(생성 날짜)</th>
+      <th class='text-center'>View<br>(조치)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'>270376 </a>        </td>
+        <td class=''>
+100109816         </td>
+        <td class=''>
+HOTEL OASIS LTD.         </td>
+        <td class=''>
+Morogoro         </td>
+        <td class=''>
+Proposal         </td>
+        <td class=''>
+Opened Case         </td>
+        <td class=''>
+Payments without Debit Number         </td>
+        <td class=''>
+14/02/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270378 </a>        </td>
+        <td class=''>
+ 100109816         </td>
+        <td class=''>
+ HOTEL OASIS LTD.         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ Proposal         </td>
+        <td class=''>
+ Opened Case         </td>
+        <td class=''>
+ Payments without Debit Number         </td>
+        <td class=''>
+ 14/02/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270290 </a>        </td>
+        <td class=''>
+ 100109816         </td>
+        <td class=''>
+ HOTEL OASIS LTD.         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ Proposal         </td>
+        <td class=''>
+ Opened Case         </td>
+        <td class=''>
+ Incorrect Posting         </td>
+        <td class=''>
+ 13/02/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270663 </a>        </td>
+        <td class=''>
+ 101559785         </td>
+        <td class=''>
+ CASTOR TARIMO THOBIAS         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ Proposal         </td>
+        <td class=''>
+ Opened Case         </td>
+        <td class=''>
+ Duplicate Assessments         </td>
+        <td class=''>
+ 28/02/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270664 </a>        </td>
+        <td class=''>
+ 101559785         </td>
+        <td class=''>
+ CASTOR TARIMO THOBIAS         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ Proposal         </td>
+        <td class=''>
+ Opened Case         </td>
+        <td class=''>
+ Duplicate Assessments         </td>
+        <td class=''>
+ 28/02/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270623 </a>        </td>
+        <td class=''>
+ 100227924         </td>
+        <td class=''>
+ S. M. HOLDING LIMITED         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ Proposal         </td>
+        <td class=''>
+ Opened Case         </td>
+        <td class=''>
+ Duplicate Assessments         </td>
+        <td class=''>
+ 27/02/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270521 </a>        </td>
+        <td class=''>
+ 108935782         </td>
+        <td class=''>
+ REGIONAL ADMINISTRATIVE SECRETARY - MOROGORO         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ Proposal         </td>
+        <td class=''>
+ Reassigned Case         </td>
+        <td class=''>
+ Payments without Debit Number         </td>
+        <td class=''>
+ 18/02/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270589 </a>        </td>
+        <td class=''>
+ 133885099         </td>
+        <td class=''>
+ DISTRICT MANAGER - TRA IFAKARA         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ Proposal         </td>
+        <td class=''>
+ Reassigned Case         </td>
+        <td class=''>
+ Payments without Debit Number         </td>
+        <td class=''>
+ 06/03/2025         </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;' onclick='document.location="#link__O00000000007_3_,_html_UI_I_DMC_0005_EN_.html__";return false;'> 270105</a>        </td>
+        <td class=''>
+ 115118102        </td>
+        <td class=''>
+ WALLECE ENOCK KILIMALENGA        </td>
+        <td class=''>
+ Morogoro        </td>
+        <td class=''>
+ Proposal        </td>
+        <td class=''>
+ Returned for Proposal        </td>
+        <td class=''>
+ Duplicate Assessments        </td>
+        <td class=''>
+ 12/02/2025        </td>
+        <td class=''>
+        <button class='btn btn-default' type='button' value='View<br>(조치)' >View<br>(조치)</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
