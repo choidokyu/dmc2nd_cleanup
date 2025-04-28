@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-I-DMC-O-0009_Duplicate Assessments(중복된 평가 내역)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Duplicate Assessments(중복된 평가 내역) - UI-I-DMC-O-0009</h1>
+<div class='pull-right'><a href='UI-I-DMC-O-0009(EN).html'>EN</a> | <a href='UI-I-DMC-O-0009(KR).html'>KR</a> | <a href='UI-I-DMC-O-0009(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div><div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-I-DMC-O-0003-COM-UI(EK).html' id='UIIDMCO0003COMUI' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIIDMCO0003COMUI = document.getElementById('UIIDMCO0003COMUI');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-I-DMC-O-0003-COM-UI(EK).html' == message.name) {            
+          iframe_UIIDMCO0003COMUI.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--Case ID : 270663(Case ID : 270663) 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663_').toggle();" id='Case_ID_:_270663_Case_ID_:_270663_'><span class='glyphicon glyphicon-chevron-right'></span> Case ID : 270663(Case ID : 270663)</h2>
+      </div>
+
+      <div id='Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663_' class='panel-body'><!--Case ID : 270663(Case ID : 270663) 화면메인그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Correct_Assessment_올바른평가_').toggle();" id='Correct_Assessment_올바른평가_'><span class='glyphicon glyphicon-menu-hamburger'></span> Correct Assessment(올바른평가)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Correct_Assessment_올바른평가_' class='panel-body'><!--Correct Assessment(올바른평가) 화면서브그룹 시작-->
+
+  <table id='UI-I-DMC-O-0009_TABLE_318' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Posting ID<br>(게시 ID)</th>
+      <th class='text-center'>TIN<br>(TIN)</th>
+      <th class='text-center'>Value Date<br>(금액 날짜)</th>
+      <th class='text-center'>Period<br>(기간)</th>
+      <th class='text-center'>Year<br>(년)</th>
+      <th class='text-center'>Tax<br>(세금)</th>
+      <th class='text-center'>GFS Code<br>(GFS 코드)</th>
+      <th class='text-center'>Case Type<br>(사례 유형)</th>
+      <th class='text-center'>Debit No<br>(차변 번호)</th>
+      <th class='text-center'>Debit Amount<br>(차변 금액)</th>
+      <th class='text-center'>Creadit Amount<br>(대변 금액)</th>
+      <th class='text-center'>Earmark<br>(귀속)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+607117720        </td>
+        <td class=''>
+104176704        </td>
+        <td class=''>
+20-04-2024        </td>
+        <td class=''>
+3        </td>
+        <td class=''>
+2024        </td>
+        <td class=''>
+VAT        </td>
+        <td class=''>
+11411154        </td>
+        <td class=''>
+REG        </td>
+        <td class=''>
+708317027        </td>
+        <td class=''>
+15,809,652.38	        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+PBL        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div><!--Correct Assessment(올바른평가) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Duplicate_Assessments_중복평가_').toggle();" id='Duplicate_Assessments_중복평가_'><span class='glyphicon glyphicon-menu-hamburger'></span> Duplicate Assessments(중복평가)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Duplicate_Assessments_중복평가_' class='panel-body'><!--Duplicate Assessments(중복평가) 화면서브그룹 시작-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='View proposed<br>(제안된내용보기)' onclick="window.open('UI-I-DMC-0009-SUB-POPUP(EK).html', 'a', 'width=1200, height=700, left=100, top=100')">View proposed<br>(제안된내용보기)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0009_TABLE_333' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col width='LINK%' >
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Posting ID<br>(게시 ID)</th>
+      <th class='text-center'>TIN<br>(TIN)</th>
+      <th class='text-center'>Value Date<br>(금액 날짜)</th>
+      <th class='text-center'>Period<br>(기간)</th>
+      <th class='text-center'>Year<br>(년)</th>
+      <th class='text-center'>Tax<br>(세금)</th>
+      <th class='text-center'>GFS Code<br>(GFS 코드)</th>
+      <th class='text-center'>Case Type<br>(사례 유형)</th>
+      <th class='text-center'>Debit No<br>(차변 번호)</th>
+      <th class='text-center'>Debit Amount<br>(차변 금액)</th>
+      <th class='text-center'>Creadit Amount<br>(대변 금액)</th>
+      <th class='text-center'>Earmark<br>(귀속)</th>
+      <th class='text-center'>Actions<br>(행위)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+607117725        </td>
+        <td class=''>
+104176704        </td>
+        <td class=''>
+20-04-2024	        </td>
+        <td class=''>
+3        </td>
+        <td class=''>
+2024        </td>
+        <td class=''>
+VAT        </td>
+        <td class=''>
+11411154        </td>
+        <td class=''>
+REG        </td>
+        <td class=''>
+708317027        </td>
+        <td class=''>
+15809652.38        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+OPN        </td>
+        <td class=''>
+<a href='javascript://return false;'>🗑️</a>        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div><!--Duplicate Assessments(중복평가) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663____You_cannot_proceed_with_this_case_because_some_all__duplicate_assessments_have_exact_payments_as_shown_in_the_table_below.<br>_아래_표에_표시된_대로_일부_전체__중복_평가에_정확한_지급이_이루어졌기_때문에_이_사례를_진행할_수_없습니다.__1'>You cannot proceed with this case because some(all) duplicate assessments have exact payments as shown in the table below.<br>(아래 표에 표시된 대로 일부(전체) 중복 평가에 정확한 지급이 이루어졌기 때문에 이 사례를 진행할 수 없습니다.)</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Exact_Payment_s__정확한지불_').toggle();" id='Exact_Payment_s__정확한지불_'><span class='glyphicon glyphicon-menu-hamburger'></span> Exact Payment(s)(정확한지불)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Exact_Payment_s__정확한지불_' class='panel-body'><!--Exact Payment(s)(정확한지불) 화면서브그룹 시작-->
+
+  <table id='UI-I-DMC-O-0009_TABLE_350' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Posting ID<br>(게시 ID)</th>
+      <th class='text-center'>TIN<br>(TIN)</th>
+      <th class='text-center'>Value Date<br>(금액 날짜)</th>
+      <th class='text-center'>Period<br>(기간)</th>
+      <th class='text-center'>Year<br>(년)</th>
+      <th class='text-center'>Tax<br>(세금)</th>
+      <th class='text-center'>GFS Code<br>(GFS 코드)</th>
+      <th class='text-center'>Case Type<br>(사례 유형)</th>
+      <th class='text-center'>Debit No<br>(차변 번호)</th>
+      <th class='text-center'>Debit Amount<br>(차변 금액)</th>
+      <th class='text-center'>Creadit Amount<br>(대변 금액)</th>
+      <th class='text-center'>Earmark<br>(귀속)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+608505630        </td>
+        <td class=''>
+104176704        </td>
+        <td class=''>
+20-04-2024        </td>
+        <td class=''>
+3        </td>
+        <td class=''>
+2024        </td>
+        <td class=''>
+VAT        </td>
+        <td class=''>
+11411154        </td>
+        <td class=''>
+REG        </td>
+        <td class=''>
+708317027        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+1,463,100	        </td>
+        <td class=''>
+BAL        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div><!--Exact Payment(s)(정확한지불) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Remarks_비고_').toggle();" id='Remarks_비고_'><span class='glyphicon glyphicon-menu-hamburger'></span> Remarks(비고)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Duplicate_Assessments_중복된_평가_내역__Case_ID_:_270663_Case_ID_:_270663__Remarks_비고_' class='panel-body'><!--Remarks(비고) 화면서브그룹 시작-->
+
+  <table id='UI-I-DMC-O-0009_TABLE_363' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Remarks<br>(비고)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+<textarea class='form-control ' rows='4' id='Case_ID_:_270663_Case_ID_:_270663__Remarks_비고___Remarks<br>_비고__1' ></textarea>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-O-0009_TABLE_363').rowspan(0);
+});
+</script>
+      </div><!--Remarks(비고) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ATTACHMENTS(EK).html' id='COMUIATTACHMENTS' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIATTACHMENTS = document.getElementById('COMUIATTACHMENTS');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ATTACHMENTS(EK).html' == message.name) {            
+          iframe_COMUIATTACHMENTS.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASNR(EK).html' id='COMUIASNR' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASNR = document.getElementById('COMUIASNR');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASNR(EK).html' == message.name) {            
+          iframe_COMUIASNR.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270663_Case_ID_:_270663_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-primary' type='button' value='Register<br>(등록하다)' >Register<br>(등록하다)</button>
+        <button class='btn btn-info' type='button' value='Modify<br>(수정하다)' >Modify<br>(수정하다)</button>
+        <button class='btn btn-danger' type='button' value='Delete<br>(삭제)' >Delete<br>(삭제)</button>
+        <button class='btn btn-success' type='button' value='Submit<br>(제출하다)' >Submit<br>(제출하다)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+      </div><!--Case ID : 270663(Case ID : 270663) 화면메인그룹 종료-->
+
+    </div><!--Case ID : 270663(Case ID : 270663) 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

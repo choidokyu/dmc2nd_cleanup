@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-I-DMC-O-0006_Lumpsum Payments(일괄 납부)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Lumpsum Payments(일괄 납부) - UI-I-DMC-O-0006</h1>
+<div class='pull-right'><a href='UI-I-DMC-O-0006(EN).html'>EN</a> | <a href='UI-I-DMC-O-0006(KR).html'>KR</a> | <a href='UI-I-DMC-O-0006(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div><div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./UI-I-DMC-O-0003-COM-UI(EK).html' id='UIIDMCO0003COMUI' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_UIIDMCO0003COMUI = document.getElementById('UIIDMCO0003COMUI');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('UI-I-DMC-O-0003-COM-UI(EK).html' == message.name) {            
+          iframe_UIIDMCO0003COMUI.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--Case ID : 270521(Case ID : 270521) 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521_').toggle();" id='Case_ID_:_270521_Case_ID_:_270521_'><span class='glyphicon glyphicon-chevron-right'></span> Case ID : 270521(Case ID : 270521)</h2>
+      </div>
+
+      <div id='Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521_' class='panel-body'><!--Case ID : 270521(Case ID : 270521) 화면메인그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521__Payment_Details_결제_세부_정보_').toggle();" id='Payment_Details_결제_세부_정보_'><span class='glyphicon glyphicon-menu-hamburger'></span> Payment Details(결제 세부 정보)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521__Payment_Details_결제_세부_정보_' class='panel-body'><!--Payment Details(결제 세부 정보) 화면서브그룹 시작-->
+
+  <table id='UI-I-DMC-O-0006_TABLE_152' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Posting ID<br>(게시 ID)</th>
+      <th class='text-center'>TIN<br>(TIN)</th>
+      <th class='text-center'>Value Date<br>(금액 날짜)</th>
+      <th class='text-center'>Period<br>(기간)</th>
+      <th class='text-center'>Year<br>(년)</th>
+      <th class='text-center'>Tax<br>(세금)</th>
+      <th class='text-center'>GFS Code<br>(GFS 코드)</th>
+      <th class='text-center'>Case Type<br>(사례 유형)</th>
+      <th class='text-center'>Debit No<br>(차변 번호)</th>
+      <th class='text-center'>Debit Amount<br>(차변 금액)</th>
+      <th class='text-center'>Creadit Amount<br>(대변 금액)</th>
+      <th class='text-center'>Earmark<br>(귀속)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+482498960        </td>
+        <td class=''>
+125840566        </td>
+        <td class=''>
+22-10-2018        </td>
+        <td class=''>
+9        </td>
+        <td class=''>
+2018        </td>
+        <td class=''>
+VAT        </td>
+        <td class=''>
+11411150        </td>
+        <td class=''>
+REG        </td>
+        <td class=''>
+        </td>
+        <td class=''>
+0        </td>
+        <td class=''>
+2894530        </td>
+        <td class=''>
+OPN        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div><!--Payment Details(결제 세부 정보) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521__Assessment_Details_평가세부정보_').toggle();" id='Assessment_Details_평가세부정보_'><span class='glyphicon glyphicon-menu-hamburger'></span> Assessment Details(평가세부정보)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521__Assessment_Details_평가세부정보_' class='panel-body'><!--Assessment Details(평가세부정보) 화면서브그룹 시작-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-info' type='button' value='Add assessment<br>(평가추가)' onclick="window.open('UI-I-DMC-0006-SUB-POPUP(EK).html', 'a', 'width=1200, height=700, left=100, top=100')">Add assessment<br>(평가추가)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0006_TABLE_166' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Posting ID<br>(게시 ID)</th>
+      <th class='text-center'>TIN<br>(TIN)</th>
+      <th class='text-center'>Value Date<br>(금액 날짜)</th>
+      <th class='text-center'>Period<br>(기간)</th>
+      <th class='text-center'>Year<br>(년)</th>
+      <th class='text-center'>Tax<br>(세금)</th>
+      <th class='text-center'>GFS Code<br>(GFS 코드)</th>
+      <th class='text-center'>Case Type<br>(사례 유형)</th>
+      <th class='text-center'>Debit No<br>(차변 번호)</th>
+      <th class='text-center'>Debit Amount<br>(차변 금액)</th>
+      <th class='text-center'>Creadit Amount<br>(대변 금액)</th>
+      <th class='text-center'>Earmark<br>(귀속)</th>
+      <th class='text-center'>Actions<br>(행위)</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+      </div><!--Assessment Details(평가세부정보) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+</div><!--Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521__Remarks_비고_').toggle();" id='Remarks_비고_'><span class='glyphicon glyphicon-menu-hamburger'></span> Remarks(비고)</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='Lumpsum_Payments_일괄_납부__Case_ID_:_270521_Case_ID_:_270521__Remarks_비고_' class='panel-body'><!--Remarks(비고) 화면서브그룹 시작-->
+
+  <table id='UI-I-DMC-O-0006_TABLE_180' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Remarks<br>(비고)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+<textarea class='form-control ' rows='4' id='Case_ID_:_270521_Case_ID_:_270521__Remarks_비고___Remarks<br>_비고__1' ></textarea>
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-O-0006_TABLE_180').rowspan(0);
+});
+</script>
+      </div><!--Remarks(비고) 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270521_Case_ID_:_270521_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ATTACHMENTS(EK).html' id='COMUIATTACHMENTS' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIATTACHMENTS = document.getElementById('COMUIATTACHMENTS');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ATTACHMENTS(EK).html' == message.name) {            
+          iframe_COMUIATTACHMENTS.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270521_Case_ID_:_270521_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <!--IFRAME 시작-->
+    <iframe src='./COM-UI-ASNR(EK).html' id='COMUIASNR' style='border: none; width: 100%;' ></iframe>
+    <script type='text/javascript'>                                     
+      let iframe_COMUIASNR = document.getElementById('COMUIASNR');   
+      window.addEventListener('message', function(e) {                                    
+        let message = e.data;                                                             
+        if('COM-UI-ASNR(EK).html' == message.name) {            
+          iframe_COMUIASNR.height = message.height + 'px'; 
+        }                                                                                 
+      } , false);                                                                         
+    </script>                                                                             
+  <!--IFRAME 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='Case_ID_:_270521_Case_ID_:_270521_____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-primary' type='button' value='Register<br>(등록하다)' >Register<br>(등록하다)</button>
+        <button class='btn btn-info' type='button' value='Modify<br>(수정하다)' >Modify<br>(수정하다)</button>
+        <button class='btn btn-danger' type='button' value='Delete<br>(삭제)' >Delete<br>(삭제)</button>
+        <button class='btn btn-success' type='button' value='Submit<br>(제출하다)' >Submit<br>(제출하다)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+      </div><!--Case ID : 270521(Case ID : 270521) 화면메인그룹 종료-->
+
+    </div><!--Case ID : 270521(Case ID : 270521) 패널 종료-->
+
+  </div>
+
+</div><!--화면메인그룹 Row 종료-->
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
