@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>                                                                                                              
 <html>                                                                                                                       
 <head>                                                                                                                       
-<title>UI-I-DMC-O-0005_부채번호 없는 납부 내역</title>                                                                                   
+<title>UI-I-DMC-O-0005_실사 계획 수립</title>                                                                                   
 <meta charset='utf-8'>                                                                                                       
 <meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
@@ -20,61 +20,208 @@
 <div class='container-fluid'><!--최상위 컨테이너 시작--> 
 <div class='row fixedTitle'><!--화면명 Row 시작-->
    <div class='col-sm-12 headerInt'>
-    <h1><span class='glyphicon glyphicon-th-large'></span> 부채번호 없는 납부 내역 - UI-I-DMC-O-0005</h1>
+    <h1><span class='glyphicon glyphicon-th-large'></span> 실사 계획 수립 - UI-I-DMC-O-0005</h1>
 <div class='pull-right'><a href='UI-I-DMC-O-0005(EN).html'>EN</a> | <a href='UI-I-DMC-O-0005(KR).html'>KR</a> | <a href='UI-I-DMC-O-0005(EK).html'>EK</a></div>  </div>
 </div><!--화면명 Row 종료-->
 
-<div class='fixedTitleBlock'></div><div class='row'><!--Row 시작-->
-  <!--IFRAME 시작-->
-    <iframe src='./UI-I-DMC-O-0003-COM-UI(KR).html' id='UIIDMCO0003COMUI' style='border: none; width: 100%;' ></iframe>
-    <script type='text/javascript'>                                     
-      let iframe_UIIDMCO0003COMUI = document.getElementById('UIIDMCO0003COMUI');   
-      window.addEventListener('message', function(e) {                                    
-        let message = e.data;                                                             
-        if('UI-I-DMC-O-0003-COM-UI(KR).html' == message.name) {            
-          iframe_UIIDMCO0003COMUI.height = message.height + 'px'; 
-        }                                                                                 
-      } , false);                                                                         
-    </script>                                                                             
-  <!--IFRAME 종료-->
-</div><!--Row 종료-->
-
-<div class='main-group row'><!--화면메인그룹 Row 시작-->
-  <div class='col-sm-12'>
-    <div class='panel panel-default'><!--Case ID : 270376 패널 시작-->
-      <div class='panel-heading clearfix'>
-      <h2 onclick="$('#부채번호_없는_납부_내역_Case_ID_:_270376').toggle();" id='Case_ID_:_270376'><span class='glyphicon glyphicon-chevron-right'></span> Case ID : 270376</h2>
-      </div>
-
-      <div id='부채번호_없는_납부_내역_Case_ID_:_270376' class='panel-body'><!--Case ID : 270376 화면메인그룹 시작-->
-
-  <table id='UI-I-DMC-O-0005_TABLE_86' class='table table-bordered table-hover'>
+<div class='fixedTitleBlock'></div>  <table id='UI-I-DMC-O-0005_TABLE_141' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >Taxpayer ID</th>
+      <th width='15%' >Status</th>
         <td width='35%' style='text-align: left;' class=''>
-100239574        </td>
-      <th width='15%' >Taxpayer Name</th>
-        <td width='35%' style='text-align: left;' class=''>
-SLOTS AND KENO LTD.        </td>
-    </tr>
-    <tr>
-      <th width='15%' >Trading Name</th>
+  <div>
+    <div class='form-group form-group-sm '>
+      <select class='form-control ' id='___Status' >
+            <option ></option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+      <th width='15%' ></th>
         <td width='35%' style='text-align: left;' class=''>
         </td>
-      <th width='15%' >Tax Office</th>
-        <td width='35%' style='text-align: left;' class=''>
-Ilala        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-I-DMC-O-0005_TABLE_86').rowspan(0);
+  $('#UI-I-DMC-O-0005_TABLE_141').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='초기화' ><span class='glyphicon glyphicon-refresh'></span> 초기화</button>
+        <button class='btn btn-info' type='button' value='New Amedment Request' >New Amedment Request</button>
+        <button class='btn btn-default' type='button' value='조회' ><span class='glyphicon glyphicon-search'></span> 조회</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0005_TABLE_146' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='LINK%' >
+      <col width='LINK%' >
+      <col width='LINK%' >
+      <col width='LINK%' >
+      <col width='LINK%' >
+      <col width='LINK%' >
+      <col width='LINK%' >
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>SN</th>
+      <th class='text-center'>Center Region</th>
+      <th class='text-center'>Financial Year</th>
+      <th class='text-center'>Request For Month Of</th>
+      <th class='text-center'>Request Date</th>
+      <th class='text-center'>Requested By</th>
+      <th class='text-center'>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;'>1</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>DODOMA</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>2024/2025</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>FEB-2025</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>2025-05-13T11:49:03</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>simon.chungu</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>APPROVED</a>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;'>2</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>DODOMA</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>2024/2025</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>FEB-2025</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>2025-01-22T14:38:50</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>jmille</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>APPROVED</a>        </td>
+      </tr>
+      <tr>
+        <td class=''>
+<a href='javascript://return false;'>3</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>DODOMA</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'></a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>AUG-2023</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>2024-05-21T09:30:35</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>alberty.yohana</a>        </td>
+        <td class=''>
+<a href='javascript://return false;'>APPROVED</a>        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='____1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='main-group row'><!--화면메인그룹 Row 시작-->
+  <div class='col-sm-12'>
+    <div class='panel panel-default'><!--2025년 2월 DODOMA 수정 양식 패널 시작-->
+      <div class='panel-heading clearfix'>
+      <h2 onclick="$('#실사_계획_수립_2025년_2월_DODOMA_수정_양식').toggle();" id='2025년_2월_DODOMA_수정_양식'><span class='glyphicon glyphicon-chevron-right'></span> 2025년 2월 DODOMA 수정 양식</h2>
+      </div>
+
+      <div id='실사_계획_수립_2025년_2월_DODOMA_수정_양식' class='panel-body'><!--2025년 2월 DODOMA 수정 양식 화면메인그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식___참고사항:_수정_사항을_작성하고_승인을_위해_월별_계획을_제출하십시오._1'>참고사항: 수정 사항을 작성하고 승인을 위해 월별 계획을 제출하십시오.</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+  <table id='UI-I-DMC-O-0005_TABLE_155' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Request Date</th>
+        <td width='35%' style='text-align: left;' class=''>
+May 13, 2025, 11:49:03 AM        </td>
+      <th width='15%' >Requested By</th>
+        <td width='35%' style='text-align: left;' class=''>
+simon.chungu        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Financial Year</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식___Financial_Year_1' value='2024/2025'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Plan For the Month Of</th>
+        <td width='35%' style='text-align: left;' class=''>
+2025-02-01        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Tax Region</th>
+        <td width='35%' style='text-align: left;' class=''>
+DODOMA        </td>
+      <th width='15%' >Tax Center</th>
+        <td width='35%' style='text-align: left;' class=''>
+DODOMA        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Request Remarks</th>
+        <td width='35%' style='text-align: left;' class=''>
+1        </td>
+      <th width='15%' >Status</th>
+        <td width='35%' style='text-align: left;' class=''>
+APPROVED        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-O-0005_TABLE_155').rowspan(0);
 });
 </script>
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Case_ID_:_270376____1'></label>
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식____1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
@@ -82,188 +229,29 @@ $(window).load(function(){
 <div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
   <div class='col-sm-12'>
-      <h3 onclick="$('#부채번호_없는_납부_내역_Case_ID_:_270376_결제_세부_정보').toggle();" id='결제_세부_정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 결제 세부 정보</h3>
+      <h3 onclick="$('#실사_계획_수립_2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025').toggle();" id='MONTH:_FEB_2025'><span class='glyphicon glyphicon-menu-hamburger'></span> MONTH: FEB-2025</h3>
   </div>
 
 </div>
 
 <div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
 
-      <div id='부채번호_없는_납부_내역_Case_ID_:_270376_결제_세부_정보' class='panel-body'><!--결제 세부 정보 화면서브그룹 시작-->
+      <div id='실사_계획_수립_2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025' class='panel-body'><!--MONTH: FEB-2025 화면서브그룹 시작-->
 
-  <table id='UI-I-DMC-O-0005_TABLE_91' class='table table-bordered table-hover'>
-    <colgroup>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-    </colgroup>
-    <thead>
-      <tr>
-      <th class='text-center'>게시 ID</th>
-      <th class='text-center'>TIN</th>
-      <th class='text-center'>금액 날짜</th>
-      <th class='text-center'>기간</th>
-      <th class='text-center'>년</th>
-      <th class='text-center'>세금</th>
-      <th class='text-center'>GFS 코드</th>
-      <th class='text-center'>사례 유형</th>
-      <th class='text-center'>차변 번호</th>
-      <th class='text-center'>차변 금액</th>
-      <th class='text-center'>대변 금액</th>
-      <th class='text-center'>귀속</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class=''>
-482498960        </td>
-        <td class=''>
-125840566        </td>
-        <td class=''>
-22-10-2018        </td>
-        <td class=''>
-9        </td>
-        <td class=''>
-2018        </td>
-        <td class=''>
-VAT        </td>
-        <td class=''>
-11411150        </td>
-        <td class=''>
-REG        </td>
-        <td class=''>
-        </td>
-        <td class=''>
-0        </td>
-        <td class=''>
-2894530        </td>
-        <td class=''>
-OPN        </td>
-      </tr>
-    </tbody>
-  </table>
-      </div><!--결제 세부 정보 화면서브그룹 종료-->
-
-</div><!--화면서브그룹 Row 종료-->
-
-<div class='row'><!--Row 시작-->
-</div><!--Row 종료-->
-
-<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
-
-  <div class='col-sm-12'>
-      <h3 onclick="$('#부채번호_없는_납부_내역_Case_ID_:_270376_평가세부정보').toggle();" id='평가세부정보'><span class='glyphicon glyphicon-menu-hamburger'></span> 평가세부정보</h3>
-  </div>
-
-</div>
-
-<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
-
-      <div id='부채번호_없는_납부_내역_Case_ID_:_270376_평가세부정보' class='panel-body'><!--평가세부정보 화면서브그룹 시작-->
-
-    <div class='row'><!--버튼그룹 Row 시작-->
-      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
-        <button class='btn btn-default' type='button' value='제안된항목보기' onclick="window.open('UI-I-DMC-O-0005-SUB-POPUP(KR).html', 'a', 'width=1200, height=700, left=100, top=100')">제안된항목보기</button>
-        <button class='btn btn-info' type='button' value='평가추가' onclick="window.open('UI-I-DMC-O-0005-SUB-POPUP2(KR).html', 'a', 'width=1200, height=700, left=100, top=100')">평가추가</button>
-      </div><!--버튼그룹 종료-->
-    </div><!--버튼그룹 Row 종료-->
-
-    <hr>
-  <table id='UI-I-DMC-O-0005_TABLE_106' class='table table-bordered table-hover'>
-    <colgroup>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-      <col>
-    </colgroup>
-    <thead>
-      <tr>
-      <th class='text-center'>게시 ID</th>
-      <th class='text-center'>TIN</th>
-      <th class='text-center'>금액 날짜</th>
-      <th class='text-center'>기간</th>
-      <th class='text-center'>년</th>
-      <th class='text-center'>세금</th>
-      <th class='text-center'>GFS 코드</th>
-      <th class='text-center'>사례 유형</th>
-      <th class='text-center'>차변 번호</th>
-      <th class='text-center'>차변 금액</th>
-      <th class='text-center'>대변 금액</th>
-      <th class='text-center'>귀속</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class=''>
-482473728        </td>
-        <td class=''>
-125840566        </td>
-        <td class=''>
-20-10-2018        </td>
-        <td class=''>
-9        </td>
-        <td class=''>
-2018        </td>
-        <td class=''>
-VAT        </td>
-        <td class=''>
-14310104        </td>
-        <td class=''>
-REG        </td>
-        <td class=''>
-440508469        </td>
-        <td class=''>
-2894529        </td>
-        <td class=''>
-0        </td>
-        <td class=''>
-OPN        </td>
-      </tr>
-    </tbody>
-  </table>
-      </div><!--평가세부정보 화면서브그룹 종료-->
-
-</div><!--화면서브그룹 Row 종료-->
-
-<div class='row'><!--Row 시작-->
-</div><!--Row 종료-->
-
-<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
-
-  <div class='col-sm-12'>
-      <h3 onclick="$('#부채번호_없는_납부_내역_Case_ID_:_270376_비고').toggle();" id='비고'><span class='glyphicon glyphicon-menu-hamburger'></span> 비고</h3>
-  </div>
-
-</div>
-
-<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
-
-      <div id='부채번호_없는_납부_내역_Case_ID_:_270376_비고' class='panel-body'><!--비고 화면서브그룹 시작-->
-
-  <table id='UI-I-DMC-O-0005_TABLE_119' class='table table-bordered table-hover'>
+  <table id='UI-I-DMC-O-0005_TABLE_164' class='table table-bordered table-hover'>
     <tr>
-      <th width='15%' >비고</th>
-        <td style='text-align: left;' colspan='3' class=''>
+      <th width='15%' >OBJECTIVES</th>
+        <td width='35%' style='text-align: left;' class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025__OBJECTIVES_104' id='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025__OBJECTIVES_104_Checking_Compliance_Status_105' type='radio' checked value='Checking Compliance Status' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025__OBJECTIVES_104_Checking_Compliance_Status_105'>Checking Compliance Status</label>
+        <input name='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025__OBJECTIVES_104' id='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025__OBJECTIVES_104_Other_106' type='radio'  value='Other' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025__OBJECTIVES_104_Other_106'>Other</label>
+        </td>
+      <th width='15%' >Other</th>
+        <td width='35%' style='text-align: left;' class=''>
     <div class='form-group  form-group-sm '>                              
         <div class='input-group col-sm-12' id=''>                         
-<textarea class='form-control ' rows='4' id='Case_ID_:_270376_비고__비고_1' >Submitted for review</textarea>
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025__Other_1' value='Checking Compliance Status'  >
         </div>
       </div><!--항목내의 텍스트 종료-->
     </div><!--항목내의 폼그룹 종료--> 
@@ -271,84 +259,735 @@ OPN        </td>
 
         </td>
     </tr>
+    <tr>
+      <th width='15%' >STATUS</th>
+        <td width='35%' style='text-align: left;' class=''>
+OPENED FOR AMENDMENT        </td>
     </tr>
   </table>
 <script type="text/javascript">
 $(window).load(function(){
-  $('#UI-I-DMC-O-0005_TABLE_119').rowspan(0);
+  $('#UI-I-DMC-O-0005_TABLE_164').rowspan(0);
 });
 </script>
-      </div><!--비고 화면서브그룹 종료-->
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_MONTH:_FEB_2025___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+      </div><!--MONTH: FEB-2025 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#실사_계획_수립_2025년_2월_DODOMA_수정_양식_Area_Earmarked').toggle();" id='Area_Earmarked'><span class='glyphicon glyphicon-menu-hamburger'></span> Area Earmarked</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='실사_계획_수립_2025년_2월_DODOMA_수정_양식_Area_Earmarked' class='panel-body'><!--Area Earmarked 화면서브그룹 시작-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='⊕ Insert a line' >⊕ Insert a line</button>
+        <button class='btn btn-default' type='button' value='⊖ Delete a line' >⊖ Delete a line</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0005_TABLE_170' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='5%' >
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Block Name</th>
+      <th class='text-center'>Ward Name</th>
+      <th class='text-center'>Registered By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_107' id='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_107__108' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_107__108'></label>
+        </td>
+        <td class=''>
+SUMA-JKT        </td>
+        <td class=''>
+Bolisa        </td>
+        <td class=''>
+edwin.jovin        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_109' id='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_109__110' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_109__110'></label>
+        </td>
+        <td class=''>
+SUMA-JKT        </td>
+        <td class=''>
+Bereko        </td>
+        <td class=''>
+edwin.jovin        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_111' id='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_111__112' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Area_Earmarked__0_111__112'></label>
+        </td>
+        <td class=''>
+SUMA-JKT        </td>
+        <td class=''>
+Berege        </td>
+        <td class=''>
+edwin.jovin        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div><!--Area Earmarked 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
+
+  <div class='col-sm-12'>
+      <h3 onclick="$('#실사_계획_수립_2025년_2월_DODOMA_수정_양식_Plan_Streets').toggle();" id='Plan_Streets'><span class='glyphicon glyphicon-menu-hamburger'></span> Plan Streets</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='실사_계획_수립_2025년_2월_DODOMA_수정_양식_Plan_Streets' class='panel-body'><!--Plan Streets 화면서브그룹 시작-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='⊕ Insert a line' >⊕ Insert a line</button>
+        <button class='btn btn-default' type='button' value='⊖ Delete a line' >⊖ Delete a line</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0005_TABLE_176' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='5%' >
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Street Name</th>
+      <th class='text-center'>Registered At</th>
+      <th class='text-center'>Registered By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_113' id='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_113__114' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_113__114'></label>
+        </td>
+        <td class=''>
+Babayu        </td>
+        <td class=''>
+2025-01-21T09:59:41        </td>
+        <td class=''>
+edwin.jovin        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_115' id='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_115__116' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_115__116'></label>
+        </td>
+        <td class=''>
+Chase shuleni        </td>
+        <td class=''>
+2025-01-21T09:59:58        </td>
+        <td class=''>
+edwin.jovin        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_117' id='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_117__118' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Plan_Streets__0_117__118'></label>
+        </td>
+        <td class=''>
+Chinyika        </td>
+        <td class=''>
+2025-01-21T10:00:05        </td>
+        <td class=''>
+edwin.jovin        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div><!--Plan Streets 화면서브그룹 종료-->
 
 </div><!--화면서브그룹 Row 종료-->
 
 <div class='row'><!--Row 시작-->
   <div class=col-sm-12><!--단일 라인 시작-->
     <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Case_ID_:_270376____1'></label>
-    </div><!--단일 라인 폼그룹 종료-->
-  </div><!--단일 라인 종료-->
-</div><!--Row 종료-->
-
-<div class='row'><!--Row 시작-->
-  <!--IFRAME 시작-->
-    <iframe src='./COM-UI-ATTACHMENTS(KR).html' id='COMUIATTACHMENTS' style='border: none; width: 100%;' ></iframe>
-    <script type='text/javascript'>                                     
-      let iframe_COMUIATTACHMENTS = document.getElementById('COMUIATTACHMENTS');   
-      window.addEventListener('message', function(e) {                                    
-        let message = e.data;                                                             
-        if('COM-UI-ATTACHMENTS(KR).html' == message.name) {            
-          iframe_COMUIATTACHMENTS.height = message.height + 'px'; 
-        }                                                                                 
-      } , false);                                                                         
-    </script>                                                                             
-  <!--IFRAME 종료-->
-</div><!--Row 종료-->
-
-<div class='row'><!--Row 시작-->
-  <div class=col-sm-12><!--단일 라인 시작-->
-    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Case_ID_:_270376____1'></label>
-    </div><!--단일 라인 폼그룹 종료-->
-  </div><!--단일 라인 종료-->
-</div><!--Row 종료-->
-
-<div class='row'><!--Row 시작-->
-  <!--IFRAME 시작-->
-    <iframe src='./COM-UI-ASNR(KR).html' id='COMUIASNR' style='border: none; width: 100%;' ></iframe>
-    <script type='text/javascript'>                                     
-      let iframe_COMUIASNR = document.getElementById('COMUIASNR');   
-      window.addEventListener('message', function(e) {                                    
-        let message = e.data;                                                             
-        if('COM-UI-ASNR(KR).html' == message.name) {            
-          iframe_COMUIASNR.height = message.height + 'px'; 
-        }                                                                                 
-      } , false);                                                                         
-    </script>                                                                             
-  <!--IFRAME 종료-->
-</div><!--Row 종료-->
-
-<div class='row'><!--Row 시작-->
-  <div class=col-sm-12><!--단일 라인 시작-->
-    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
-      <label class='control-label label-line ' for='Case_ID_:_270376____1'></label>
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식____1'></label>
     </div><!--단일 라인 폼그룹 종료-->
   </div><!--단일 라인 종료-->
 </div><!--Row 종료-->
 
     <div class='row'><!--버튼그룹 Row 시작-->
       <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
-        <button class='btn btn-primary' type='button' value='등록하다' >등록하다</button>
-        <button class='btn btn-info' type='button' value='수정하다' >수정하다</button>
+        <button class='btn btn-info' type='button' value='저장' >저장</button>
         <button class='btn btn-danger' type='button' value='삭제' >삭제</button>
-        <button class='btn btn-success' type='button' value='제출하다' >제출하다</button>
+        <button class='btn btn-info' type='button' value='Submit FEB-2025 Plan For Approval' >Submit FEB-2025 Plan For Approval</button>
       </div><!--버튼그룹 종료-->
     </div><!--버튼그룹 Row 종료-->
 
     <hr>
-      </div><!--Case ID : 270376 화면메인그룹 종료-->
+<div class='sub-group-title row'><!--화면서브그룹 Row 시작-->
 
-    </div><!--Case ID : 270376 패널 종료-->
+  <div class='col-sm-12'>
+      <h3 onclick="$('#실사_계획_수립_2025년_2월_DODOMA_수정_양식_Actions').toggle();" id='Actions'><span class='glyphicon glyphicon-menu-hamburger'></span> Actions</h3>
+  </div>
+
+</div>
+
+<div class='sub-group-content row'><!--화면서브그룹 Row 시작-->
+
+      <div id='실사_계획_수립_2025년_2월_DODOMA_수정_양식_Actions' class='panel-body'><!--Actions 화면서브그룹 시작-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions___1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-info' type='button' value='⊕ Add Action' >⊕ Add Action</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <ul class='nav nav-tabs'>
+    <li class='active'><a data-toggle='tab' href='#2025년_2월_DODOMA_수정_양식_Actions_Action_1'>Action 1</a></li>
+    <li><a data-toggle='tab' href='#2025년_2월_DODOMA_수정_양식_Actions_Action_2'>Action 2</a></li>
+  </ul>
+
+  <div class='tab-content'><!--탭그룹 시작-->
+
+    <div id='2025년_2월_DODOMA_수정_양식_Actions_Action_1' class='tab-pane fade in active'><!--2025년 2월 DODOMA 수정 양식_Actions_Action 1 탭 시작-->
+
+  <table id='UI-I-DMC-O-0005_TABLE_186' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >ACTION</th>
+        <td style='text-align: left;' colspan='3' class=''>
+  <div>
+    <div class='form-group form-group-sm form-one-line'>
+      <select class='form-control ' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_ACTION' >
+            <option >Visit taxpayers eligible for VAT registration
+</option>
+            <option >To facilitate close monitoring of taxpayers' activities
+</option>
+            <option >Visit taxpayers required for TIN registration
+</option>
+            <option >Visit taxpayers to identify eligible for band graduation
+</option>
+            <option >Classify taxpayer as Small taxpayers, Non- accounts cases or all individual taxpayers in the block
+</option>
+            <option >Setting collection targets with respect to T/P Category
+</option>
+            <option >Visit taxpayers not turn out for assessment
+</option>
+            <option >Visit taxpayers not turn out for payment
+</option>
+            <option >Visit taxpayers eligible for EFD acquisition
+</option>
+            <option >Visit taxpayers to verify non-issuance of receipts or tax invoices
+</option>
+            <option >Visit taxpayers eligible for VAT registration
+</option>
+            <option >Visit taxpayers not filled VAT return
+</option>
+            <option >Visit taxpayers not filled PAYE return
+</option>
+            <option >Visit taxpayers not filled SDL return
+</option>
+            <option >Visit taxpayers not filled ROI
+</option>
+            <option >Visit taxpayers not submitted Z report
+</option>
+            <option >Visit unmatched taxpayers for TIN Updation
+</option>
+            <option >Visit unmatched business address for TIN registration
+</option>
+            <option >Visit taxpayers to identify eligible for upward/downward assessment
+</option>
+            <option >Optional menu of adding action which is not in drop list</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >TARGET KPI</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_TARGET_KPI_1' value='20'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >ACTUAL KPI</th>
+        <td width='35%' style='text-align: left;' class=''>
+0        </td>
+    </tr>
+    <tr>
+      <th width='15%' >EXPECTED REVENUE COLLECTION</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_EXPECTED_REVENUE_COLLECTION_1' value='TSH 100,000,000.00'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >ACTUAL REVENUE COLLECTION</th>
+        <td width='35%' style='text-align: left;' class=''>
+TSH 0.00        </td>
+    </tr>
+    <tr>
+      <th width='15%' >REMARKS</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-O-0005_TABLE_186').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1_ACTION_RESOURCES_1'><span class='glyphicon glyphicon-th-list'></span> ACTION RESOURCES</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='⊕ Insert a line' >⊕ Insert a line</button>
+        <button class='btn btn-default' type='button' value='⊖ Delete a line' >⊖ Delete a line</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0005_TABLE_196' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='5%' >
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Resource</th>
+      <th class='text-center'>Required</th>
+      <th class='text-center'>Actual</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_140' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_140__141' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_140__141'></label>
+        </td>
+        <td class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_Resource1_1' value='Vehicle'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+        <td class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_Required2_1' value='1'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+        <td class=''>
+0        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_142' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_142__143' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_142__143'></label>
+        </td>
+        <td class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_Resource1_1' value='Overtime payments'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+        <td class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_Required2_1' value='360,000'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+        <td class=''>
+0        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1_ACTION_STAFF_1'><span class='glyphicon glyphicon-th-list'></span> ACTION STAFF</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='⊕ Insert a line' >⊕ Insert a line</button>
+        <button class='btn btn-default' type='button' value='⊖ Delete a line' >⊖ Delete a line</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0005_TABLE_204' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='5%' >
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Staff Name</th>
+      <th class='text-center'>Employee Number</th>
+      <th class='text-center'>Title</th>
+      <th class='text-center'>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_144' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_144__145' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_144__145'></label>
+        </td>
+        <td class=''>
+EMMANUEL THOMAS        </td>
+        <td class=''>
+9412        </td>
+        <td class=''>
+ICT Officer II        </td>
+        <td class=''>
+emmanuel.thomas@tra.go.tz        </td>
+      </tr>
+      <tr>
+        <td class=''>
+        <input name='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_146' id='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_146__147' type='checkbox'  value='' >
+        <label class='label-for-select ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1_0_146__147'></label>
+        </td>
+        <td class=''>
+AINEKISHA ARUBINI        </td>
+        <td class=''>
+9426        </td>
+        <td class=''>
+ICT Officer II        </td>
+        <td class=''>
+ainekisha.arubini@tra.go.tz        </td>
+      </tr>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_1__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-info' type='button' value='저장' >저장</button>
+        <button class='btn btn-danger' type='button' value='삭제' >삭제</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+    </div><!--Action 1 탭 종료-->
+
+    <div id='2025년_2월_DODOMA_수정_양식_Actions_Action_2' class='tab-pane fade'><!--2025년 2월 DODOMA 수정 양식_Actions_Action 2 탭 시작-->
+
+  <table id='UI-I-DMC-O-0005_TABLE_212' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >ACTION</th>
+        <td style='text-align: left;' colspan='3' class=''>
+  <div>
+    <div class='form-group form-group-sm form-one-line'>
+      <select class='form-control ' id='2025년_2월_DODOMA_수정_양식_Actions_Action_2_ACTION' >
+            <option >Visit taxpayers eligible for VAT registration
+</option>
+            <option >To facilitate close monitoring of taxpayers' activities
+</option>
+            <option >Visit taxpayers required for TIN registration
+</option>
+            <option >Visit taxpayers to identify eligible for band graduation
+</option>
+            <option >Classify taxpayer as Small taxpayers, Non- accounts cases or all individual taxpayers in the block
+</option>
+            <option >Setting collection targets with respect to T/P Category
+</option>
+            <option >Visit taxpayers not turn out for assessment
+</option>
+            <option >Visit taxpayers not turn out for payment
+</option>
+            <option >Visit taxpayers eligible for EFD acquisition
+</option>
+            <option >Visit taxpayers to verify non-issuance of receipts or tax invoices
+</option>
+            <option >Visit taxpayers eligible for VAT registration
+</option>
+            <option >Visit taxpayers not filled VAT return
+</option>
+            <option >Visit taxpayers not filled PAYE return
+</option>
+            <option >Visit taxpayers not filled SDL return
+</option>
+            <option >Visit taxpayers not filled ROI
+</option>
+            <option >Visit taxpayers not submitted Z report
+</option>
+            <option >Visit unmatched taxpayers for TIN Updation
+</option>
+            <option >Visit unmatched business address for TIN registration
+</option>
+            <option >Visit taxpayers to identify eligible for upward/downward assessment
+</option>
+            <option >Optional menu of adding action which is not in drop list</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >TARGET KPI</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_2_TARGET_KPI_1' value='3'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >ACTUAL KPI</th>
+        <td width='35%' style='text-align: left;' class=''>
+0        </td>
+    </tr>
+    <tr>
+      <th width='15%' >EXPECTED REVENUE COLLECTION</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='2025년_2월_DODOMA_수정_양식_Actions_Action_2_EXPECTED_REVENUE_COLLECTION_1' value='TSH 0.00'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >ACTUAL REVENUE COLLECTION</th>
+        <td width='35%' style='text-align: left;' class=''>
+TSH 0.00        </td>
+    </tr>
+    <tr>
+      <th width='15%' >REMARKS</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        </td>
+    </tr>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-O-0005_TABLE_212').rowspan(0);
+});
+</script>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_2__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_2_ACTION_RESOURCES_1'><span class='glyphicon glyphicon-th-list'></span> ACTION RESOURCES</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='⊕ Insert a line' >⊕ Insert a line</button>
+        <button class='btn btn-default' type='button' value='⊖ Delete a line' >⊖ Delete a line</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0005_TABLE_222' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='5%' >
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Resource</th>
+      <th class='text-center'>Required</th>
+      <th class='text-center'>Actual</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_2__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_2_ACTION_STAFF_1'><span class='glyphicon glyphicon-th-list'></span> ACTION STAFF</label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default' type='button' value='⊕ Insert a line' >⊕ Insert a line</button>
+        <button class='btn btn-default' type='button' value='⊖ Delete a line' >⊖ Delete a line</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0005_TABLE_230' class='table table-bordered table-hover'>
+    <colgroup>
+      <col width='5%' >
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'></th>
+      <th class='text-center'>Staff Name</th>
+      <th class='text-center'>Employee Number</th>
+      <th class='text-center'>Title</th>
+      <th class='text-center'>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+<div class='row'><!--Row 시작-->
+  <div class=col-sm-12><!--단일 라인 시작-->
+    <div class='form-group form-inline form-group-sm'><!--단일 라인 폼그룹 시작-->                              
+      <label class='control-label label-line ' for='2025년_2월_DODOMA_수정_양식_Actions_Action_2__1'></label>
+    </div><!--단일 라인 폼그룹 종료-->
+  </div><!--단일 라인 종료-->
+</div><!--Row 종료-->
+
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-info' type='button' value='저장' >저장</button>
+        <button class='btn btn-danger' type='button' value='삭제' >삭제</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+    </div><!--Action 2 탭 종료-->
+
+  </div><!--탭그룹 종료-->
+
+      </div><!--Actions 화면서브그룹 종료-->
+
+</div><!--화면서브그룹 Row 종료-->
+
+      </div><!--2025년 2월 DODOMA 수정 양식 화면메인그룹 종료-->
+
+    </div><!--2025년 2월 DODOMA 수정 양식 패널 종료-->
 
   </div>
 
