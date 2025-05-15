@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-I-DMC-O-0003-COM-UI_Case management COM UI(Case management COM UI)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+  <table id='UI-I-DMC-O-0003-COM-UI_TABLE_3' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >From Date<br>(From Date)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group  form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___From_Date<br>_From_Date__div_1'>                         
+                  <input type='text' class='form-control '  id='___From_Date<br>_From_Date_' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___From_Date<br>_From_Date__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >To Date<br>(To Date)</th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group  form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___To_Date<br>_To_Date__div_1'>                         
+                  <input type='text' class='form-control '  id='___To_Date<br>_To_Date_' value='' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___To_Date<br>_To_Date__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Error Type<br>(Error Type)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_All_Options
+_2' type='checkbox'  value='All Options
+' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_All_Options
+_2'>All Options
+</label>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_1│Payments_Without_Debit_Number
+_3' type='checkbox'  value='1│Payments Without Debit Number
+' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_1│Payments_Without_Debit_Number
+_3'>1│Payments Without Debit Number
+</label>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_2│Incorrect_Posting
+_4' type='checkbox'  value='2│Incorrect Posting
+' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_2│Incorrect_Posting
+_4'>2│Incorrect Posting
+</label>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_3│Duplicate_Assessments
+_5' type='checkbox'  value='3│Duplicate Assessments
+' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_3│Duplicate_Assessments
+_5'>3│Duplicate Assessments
+</label>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_4│Vacated_Assessments
+_6' type='checkbox'  value='4│Vacated Assessments
+' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_4│Vacated_Assessments
+_6'>4│Vacated Assessments
+</label>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_6│Wrong_Assessments
+_7' type='checkbox'  value='6│Wrong Assessments
+' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_6│Wrong_Assessments
+_7'>6│Wrong Assessments
+</label>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_8│Lumpsum_Payments
+_8' type='checkbox'  value='8│Lumpsum Payments
+' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_8│Lumpsum_Payments
+_8'>8│Lumpsum Payments
+</label>
+        <input name='___Error_Type<br>_Error_Type__1' id='___Error_Type<br>_Error_Type__1_9│Reverse_Cancelled_Assessment_9' type='checkbox'  value='9│Reverse Cancelled Assessment' >
+        <label class='label-for-select ' for='___Error_Type<br>_Error_Type__1_9│Reverse_Cancelled_Assessment_9'>9│Reverse Cancelled Assessment</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Stage<br>(단계)</th>
+        <td style='text-align: left;' colspan='3' class=''>
+        <input name='___Stage<br>_단계__10' id='___Stage<br>_단계__10_All_Options_11' type='checkbox' checked value='All Options' >
+        <label class='label-for-select ' for='___Stage<br>_단계__10_All_Options_11'>All Options</label>
+        <input name='___Stage<br>_단계__10' id='___Stage<br>_단계__10_1│Proposal_12' type='checkbox'  value='1│Proposal' >
+        <label class='label-for-select ' for='___Stage<br>_단계__10_1│Proposal_12'>1│Proposal</label>
+        <input name='___Stage<br>_단계__10' id='___Stage<br>_단계__10_2│Verification_13' type='checkbox'  value='2│Verification' >
+        <label class='label-for-select ' for='___Stage<br>_단계__10_2│Verification_13'>2│Verification</label>
+        <input name='___Stage<br>_단계__10' id='___Stage<br>_단계__10_3│Approval_14' type='checkbox'  value='3│Approval' >
+        <label class='label-for-select ' for='___Stage<br>_단계__10_3│Approval_14'>3│Approval</label>
+        <input name='___Stage<br>_단계__10' id='___Stage<br>_단계__10_4│Approved_15' type='checkbox'  value='4│Approved' >
+        <label class='label-for-select ' for='___Stage<br>_단계__10_4│Approved_15'>4│Approved</label>
+        <input name='___Stage<br>_단계__10' id='___Stage<br>_단계__10_5│Rejected_16' type='checkbox'  value='5│Rejected' >
+        <label class='label-for-select ' for='___Stage<br>_단계__10_5│Rejected_16'>5│Rejected</label>
+        <input name='___Stage<br>_단계__10' id='___Stage<br>_단계__10_6│Removed_17' type='checkbox'  value='6│Removed' >
+        <label class='label-for-select ' for='___Stage<br>_단계__10_6│Removed_17'>6│Removed</label>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+      <th width='15%' >Taxpayer ID<br>(Taxpayer ID)</th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Taxpayer_ID<br>_Taxpayer_ID__1' value=''  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-O-0003-COM-UI_TABLE_3').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Reset<br>(초기화)' ><span class='glyphicon glyphicon-refresh'></span> Reset<br>(초기화)</button>
+        <button class='btn btn-info' type='button' value='New<br>(신규)' onclick="window.open('UI-I-DMC-O-0002(EK).html', 'a', 'width=1200, height=700, left=100, top=100')"><span class='glyphicon glyphicon-new-window'></span> New<br>(신규)</button>
+        <button class='btn btn-default' type='button' value='Search<br>(조회)' ><span class='glyphicon glyphicon-search'></span> Search<br>(조회)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+  <table id='UI-I-DMC-O-0003-COM-UI_TABLE_11' class='table table-bordered table-hover'>
+    <colgroup>
+      <col>
+      <col width='LINK%' >
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+      <th class='text-center'>Row<br>(Row)</th>
+      <th class='text-center'>Case ID<br>(사례 ID)</th>
+      <th class='text-center'>Taxpayer ID<br>(납세자 ID)</th>
+      <th class='text-center'>Taxpayer Name<br>(납세자 이름)</th>
+      <th class='text-center'>Tax Region<br>(과세 지역)</th>
+      <th class='text-center'>Stage<br>(단계)</th>
+      <th class='text-center'>Status<br>(상태)</th>
+      <th class='text-center'>Error Type<br>(오류 유형)</th>
+      <th class='text-center'>Date Created<br>(생성 날짜)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=''>
+1        </td>
+        <td class=''>
+<a href='javascript://return false;'>270376 </a>        </td>
+        <td class=''>
+100239574         </td>
+        <td class=''>
+SLOTS AND KENO LTD.         </td>
+        <td class=''>
+Morogoro         </td>
+        <td class=''>
+1│Proposal        </td>
+        <td class=''>
+1│Opened Case        </td>
+        <td class=''>
+1│Payments without Debit Number         </td>
+        <td class=''>
+14/02/2025         </td>
+      </tr>
+      <tr>
+        <td class=''>
+2        </td>
+        <td class=''>
+<a href='javascript://return false;'>  270290 </a>        </td>
+        <td class=''>
+ 100109816         </td>
+        <td class=''>
+ HOTEL OASIS LTD.         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+2│Verification        </td>
+        <td class=''>
+2│Sent for Verification        </td>
+        <td class=''>
+ 2│Incorrect Posting         </td>
+        <td class=''>
+ 13/02/2025         </td>
+      </tr>
+      <tr>
+        <td class=''>
+3        </td>
+        <td class=''>
+<a href='javascript://return false;'> 270663 </a>        </td>
+        <td class=''>
+ 101559785         </td>
+        <td class=''>
+ CASTOR TARIMO THOBIAS         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+3│Approval        </td>
+        <td class=''>
+3│Sent for Approval        </td>
+        <td class=''>
+ 3│Duplicate Assessments         </td>
+        <td class=''>
+ 28/02/2025         </td>
+      </tr>
+      <tr>
+        <td class=''>
+4        </td>
+        <td class=''>
+<a href='javascript://return false;'> 270664 </a>        </td>
+        <td class=''>
+ 101559785         </td>
+        <td class=''>
+ CASTOR TARIMO THOBIAS         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+4│Approved        </td>
+        <td class=''>
+4│Returned for Proposal        </td>
+        <td class=''>
+ 4│Vacated Assessments         </td>
+        <td class=''>
+ 28/02/2025         </td>
+      </tr>
+      <tr>
+        <td class=''>
+5        </td>
+        <td class=''>
+<a href='javascript://return false;'> 270623 </a>        </td>
+        <td class=''>
+ 100227924         </td>
+        <td class=''>
+ S. M. HOLDING LIMITED         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+5│Rejected        </td>
+        <td class=''>
+5│Returned for Verification        </td>
+        <td class=''>
+ 6│Wrong Assessment         </td>
+        <td class=''>
+ 27/02/2025         </td>
+      </tr>
+      <tr>
+        <td class=''>
+6        </td>
+        <td class=''>
+<a href='javascript://return false;'> 270521 </a>        </td>
+        <td class=''>
+ 108935782         </td>
+        <td class=''>
+ REGIONAL ADMINISTRATIVE SECRETARY - MOROGORO         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+6│Removed         </td>
+        <td class=''>
+6│Resent for Verification        </td>
+        <td class=''>
+ 8│Lumpsum Payment         </td>
+        <td class=''>
+ 18/02/2025         </td>
+      </tr>
+      <tr>
+        <td class=''>
+7        </td>
+        <td class=''>
+<a href='javascript://return false;'> 270589 </a>        </td>
+        <td class=''>
+ 133885099         </td>
+        <td class=''>
+ DISTRICT MANAGER - TRA IFAKARA         </td>
+        <td class=''>
+ Morogoro         </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+7│Resent for Approval        </td>
+        <td class=''>
+ 9│Reverse Cancelled Assessment         </td>
+        <td class=''>
+ 06/03/2025         </td>
+      </tr>
+      <tr>
+        <td class=''>
+8        </td>
+        <td class=''>
+<a href='javascript://return false;'> - </a>        </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+8│Closed Case        </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+      </tr>
+      <tr>
+        <td class=''>
+9        </td>
+        <td class=''>
+<a href='javascript://return false;'> - </a>        </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+9│Reopened Case        </td>
+        <td class=''>
+ -         </td>
+        <td class=''>
+ -         </td>
+      </tr>
+      <tr>
+        <td class=''>
+10        </td>
+        <td class=''>
+<a href='javascript://return false;'> -</a>        </td>
+        <td class=''>
+ -        </td>
+        <td class=''>
+ -        </td>
+        <td class=''>
+ -        </td>
+        <td class=''>
+ -        </td>
+        <td class=''>
+10│Reassigned Case        </td>
+        <td class=''>
+ -        </td>
+        <td class=''>
+ -        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='text-center'> 
+    <ul class='pagination pagination-sm'> 
+      <li class='disabled'><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-left'></span></a></li>          
+      <li><a href='javascript://return false;'>1</a></li>          
+      <li><a href='javascript://return false;'>2</a></li>          
+      <li><a href='javascript://return false;'>3</a></li>          
+      <li><a href='javascript://return false;'>4</a></li>          
+      <li><a href='javascript://return false;'>5</a></li>          
+      <li><a href='javascript://return false;'>6</a></li>          
+      <li><a href='javascript://return false;'>7</a></li>          
+      <li><a href='javascript://return false;'>8</a></li>          
+      <li><a href='javascript://return false;'>9</a></li>          
+      <li><a href='javascript://return false;'>10</a></li>         
+      <li><a href='javascript://return false;'><span class='glyphicon glyphicon-chevron-right'></span></a></li>          
+    </ul>                                 
+  </div>                                  
+
+
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           

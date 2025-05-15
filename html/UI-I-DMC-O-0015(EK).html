@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>                                                                                                              
+<html>                                                                                                                       
+<head>                                                                                                                       
+<title>UI-I-DMC-O-0015_Potential Errors Reports(잠재적 오류에 대한 보고서)</title>                                                                                   
+<meta charset='utf-8'>                                                                                                       
+<meta name='viewport' content='width=device-width, initial-scale=1'>                                                         
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>                                                          
+<script src='../lib/jquery/jquery-1.12.4.js'></script>                                                                       
+<script src='../lib/moment/moment-2.14.1.min.js'></script>                                                                   
+<script src='../lib/moment/moment-with-locales-2.14.1.js'></script>                                                          
+<script src='../lib/bootstrap/3.3.7/dist/js/bootstrap.min.js'></script>                                                      
+<script src='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/js/bootstrap-datetimepicker.min.js'></script>            
+<script src='../lib/custom/custom.js'></script>                                                                              
+<link rel='stylesheet' href='../lib/bootstrap/3.3.7/dist/css/bootstrap.min.css' />                                           
+<link rel='stylesheet' href='../lib/eonasdan-bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css' /> 
+<link rel='stylesheet' href='../lib/custom/custom.css' />                                                                    
+<link rel='stylesheet' href='../lib/custom/style.css' />                                                                     
+</head>                                                  
+<body>                                                   
+<div class='container-fluid'><!--최상위 컨테이너 시작--> 
+<div class='row fixedTitle'><!--화면명 Row 시작-->
+   <div class='col-sm-12 headerInt'>
+    <h1><span class='glyphicon glyphicon-th-large'></span> Potential Errors Reports(잠재적 오류에 대한 보고서) - UI-I-DMC-O-0015</h1>
+<div class='pull-right'><a href='UI-I-DMC-O-0015(EN).html'>EN</a> | <a href='UI-I-DMC-O-0015(KR).html'>KR</a> | <a href='UI-I-DMC-O-0015(EK).html'>EK</a></div>  </div>
+</div><!--화면명 Row 종료-->
+
+<div class='fixedTitleBlock'></div>  <table id='UI-I-DMC-O-0015_TABLE_663' class='table table-bordered table-hover'>
+    <tr>
+      <th width='15%' >Report Type<br>(보고서 유형)<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+    <div class='form-group  form-group-sm '>                              
+        <div class='input-group col-sm-12' id=''>                         
+        <input class='form-control ' type='text' id='___Report_Type<br>_보고서_유형__1' value='--select report--(--보고서 선택--)
+|List of Approved Cleanup cases(승인된 정리 사례 목록)
+|List of Rejected Cleanup cases(거부된 정리 사례 목록)
+|List of Cases in Verification Stage(검증 단계 사례 목록)
+|List of Cases in Proposal Stage(제안 단계 사례 목록)
+|List of Cases in Approval Stage(승인 단계 사례 목록)
+|Individual Detailed Cleanup(개별 상세 정리)'  >
+        </div>
+      </div><!--항목내의 텍스트 종료-->
+    </div><!--항목내의 폼그룹 종료--> 
+  </div><!--한개의 항목 종료-->
+
+        </td>
+      <th width='15%' >Departments<br>(부서)<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group form-group-sm '>
+      <select class='form-control ' id='___Departments<br>_부서_' >
+            <option >--select department--(--부서 선택--)</option>
+            <option >Large Taxpayers Department(대규모 납세자 부서)</option>
+            <option >Domestic Revenue(국세청)</option>
+            <option >Department(부서)</option>
+      </select>
+    </div>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+      <th width='15%' >Select From Date<br>(시작일 선택)<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group  form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___Select_From_Date<br>_시작일_선택__div_1'>                         
+                  <input type='text' class='form-control '  id='___Select_From_Date<br>_시작일_선택_' value='18/04/2024' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___Select_From_Date<br>_시작일_선택__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+      <th width='15%' >Select To Date<br>(종료일 선택)<span class='mandatory'> *</span></th>
+        <td width='35%' style='text-align: left;' class=''>
+  <div>
+    <div class='form-group  form-group-sm'>                              
+      <div class=' input-group'>                                                                
+          <div class='input-group date' id='___Select_To_Date<br>_종료일_선택__div_1'>                         
+                  <input type='text' class='form-control '  id='___Select_To_Date<br>_종료일_선택_' value='18/04/2025' />                
+                  <span class='input-group-addon'>                                          
+                      <span class='glyphicon glyphicon-calendar'></span>                    
+                  </span>                                                                   
+          </div>                                                                            
+      </div>
+    </div>
+  </div>
+    <script type='text/javascript'>
+      $(function () { $('#___Select_To_Date<br>_종료일_선택__div_1').datetimepicker({format: 'DD/MM/YYYY'}); });
+    </script>
+
+        </td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(window).load(function(){
+  $('#UI-I-DMC-O-0015_TABLE_663').rowspan(0);
+});
+</script>
+    <div class='row'><!--버튼그룹 Row 시작-->
+      <div class='col-sm-12 text-right'><!--버튼그룹 시작-->
+        <button class='btn btn-default btn-left' type='button' value='Retrieve<br>(검색하다)' ><span class='glyphicon glyphicon-search'></span> Retrieve<br>(검색하다)</button>
+        <button class='btn btn-default btn-left' type='button' value='Cancel<br>(취소)' >Cancel<br>(취소)</button>
+      </div><!--버튼그룹 종료-->
+    </div><!--버튼그룹 Row 종료-->
+
+    <hr>
+</div><!--최상위 컨테이너 종료--> 
+</body>                           
+</html>                           
